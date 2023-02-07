@@ -48,7 +48,7 @@
             this.panel_lateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_lateral.Location = new System.Drawing.Point(0, 0);
             this.panel_lateral.Name = "panel_lateral";
-            this.panel_lateral.Size = new System.Drawing.Size(271, 651);
+            this.panel_lateral.Size = new System.Drawing.Size(271, 661);
             this.panel_lateral.TabIndex = 0;
             // 
             // panel1
@@ -91,12 +91,13 @@
             this.btn_agregar.TabIndex = 3;
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // panel_opcion
             // 
             this.panel_opcion.Location = new System.Drawing.Point(278, 13);
             this.panel_opcion.Name = "panel_opcion";
-            this.panel_opcion.Size = new System.Drawing.Size(894, 626);
+            this.panel_opcion.Size = new System.Drawing.Size(956, 630);
             this.panel_opcion.TabIndex = 1;
             // 
             // Form1
@@ -104,10 +105,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(1184, 651);
+            this.ClientSize = new System.Drawing.Size(1244, 661);
             this.Controls.Add(this.panel_opcion);
             this.Controls.Add(this.panel_lateral);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
             this.panel_lateral.ResumeLayout(false);
             this.ResumeLayout(false);

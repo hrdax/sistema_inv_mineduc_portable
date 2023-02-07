@@ -42,14 +42,14 @@
             this.grid_db.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_db.Location = new System.Drawing.Point(12, 65);
             this.grid_db.Name = "grid_db";
-            this.grid_db.Size = new System.Drawing.Size(854, 453);
+            this.grid_db.Size = new System.Drawing.Size(932, 486);
             this.grid_db.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calisto MT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 548);
+            this.label1.Location = new System.Drawing.Point(12, 567);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(848, 17);
             this.label1.TabIndex = 1;
@@ -75,7 +75,7 @@
             this.btn_excel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_excel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_excel.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_excel.Location = new System.Drawing.Point(366, 12);
+            this.btn_excel.Location = new System.Drawing.Point(420, 12);
             this.btn_excel.Name = "btn_excel";
             this.btn_excel.Size = new System.Drawing.Size(138, 34);
             this.btn_excel.TabIndex = 3;
@@ -88,7 +88,7 @@
             this.btn_borrartodo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_borrartodo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_borrartodo.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_borrartodo.Location = new System.Drawing.Point(728, 12);
+            this.btn_borrartodo.Location = new System.Drawing.Point(806, 12);
             this.btn_borrartodo.Name = "btn_borrartodo";
             this.btn_borrartodo.Size = new System.Drawing.Size(138, 34);
             this.btn_borrartodo.TabIndex = 4;
@@ -100,7 +100,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(878, 587);
+            this.ClientSize = new System.Drawing.Size(956, 630);
             this.Controls.Add(this.btn_borrartodo);
             this.Controls.Add(this.btn_excel);
             this.Controls.Add(this.btn_mod_el);

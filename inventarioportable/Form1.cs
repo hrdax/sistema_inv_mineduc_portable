@@ -19,6 +19,7 @@ namespace inventarioportable
 
         private void btn_verdatos_Click(object sender, EventArgs e)
         {
+            //llama a la funcion que mostrara el panel seleccionado
             this.abrirpanel(new verdatos());
         }
         //crea form nulo
@@ -38,6 +39,11 @@ namespace inventarioportable
             panel_opcion.Tag = formhijo;
             formhijo.BringToFront();
             formhijo.Show();
+        }
+
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+            this.abrirpanel(new agregar());
         }
     }
 }
