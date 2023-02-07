@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.ingreso_nombres = new System.Windows.Forms.TextBox();
+            this.ingreso_apellidos = new System.Windows.Forms.TextBox();
+            this.ingreso_RUT = new System.Windows.Forms.TextBox();
+            this.ingreso_marca = new System.Windows.Forms.TextBox();
+            this.ingreso_inventario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,32 +41,32 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.ingreso_nombre_equipo = new System.Windows.Forms.TextBox();
+            this.ingreso_usuario = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.ingreso_modelo = new System.Windows.Forms.TextBox();
+            this.ingreso_MAC = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.ingreso_RAM = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ingreso_serie = new System.Windows.Forms.TextBox();
+            this.cbox_vwindows = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbox_voffice = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbox_lojack = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cbox_tipo_equipo = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cbox_unidad = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.ingreso_procesador = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.ingreso_espacio = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.cbox_departamento = new System.Windows.Forms.ComboBox();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -81,45 +81,45 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingreso nuevo registro";
             // 
-            // textBox1
+            // ingreso_nombres
             // 
-            this.textBox1.Location = new System.Drawing.Point(185, 90);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 29);
-            this.textBox1.TabIndex = 1;
+            this.ingreso_nombres.Location = new System.Drawing.Point(185, 90);
+            this.ingreso_nombres.Multiline = true;
+            this.ingreso_nombres.Name = "ingreso_nombres";
+            this.ingreso_nombres.Size = new System.Drawing.Size(204, 29);
+            this.ingreso_nombres.TabIndex = 1;
             // 
-            // textBox2
+            // ingreso_apellidos
             // 
-            this.textBox2.Location = new System.Drawing.Point(185, 156);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(204, 29);
-            this.textBox2.TabIndex = 2;
+            this.ingreso_apellidos.Location = new System.Drawing.Point(185, 156);
+            this.ingreso_apellidos.Multiline = true;
+            this.ingreso_apellidos.Name = "ingreso_apellidos";
+            this.ingreso_apellidos.Size = new System.Drawing.Size(204, 29);
+            this.ingreso_apellidos.TabIndex = 2;
             // 
-            // textBox3
+            // ingreso_RUT
             // 
-            this.textBox3.Location = new System.Drawing.Point(185, 222);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(204, 29);
-            this.textBox3.TabIndex = 3;
+            this.ingreso_RUT.Location = new System.Drawing.Point(185, 222);
+            this.ingreso_RUT.Multiline = true;
+            this.ingreso_RUT.Name = "ingreso_RUT";
+            this.ingreso_RUT.Size = new System.Drawing.Size(204, 29);
+            this.ingreso_RUT.TabIndex = 3;
             // 
-            // textBox4
+            // ingreso_marca
             // 
-            this.textBox4.Location = new System.Drawing.Point(185, 290);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(204, 29);
-            this.textBox4.TabIndex = 4;
+            this.ingreso_marca.Location = new System.Drawing.Point(185, 290);
+            this.ingreso_marca.Multiline = true;
+            this.ingreso_marca.Name = "ingreso_marca";
+            this.ingreso_marca.Size = new System.Drawing.Size(204, 29);
+            this.ingreso_marca.TabIndex = 4;
             // 
-            // textBox5
+            // ingreso_inventario
             // 
-            this.textBox5.Location = new System.Drawing.Point(406, 90);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(204, 29);
-            this.textBox5.TabIndex = 5;
+            this.ingreso_inventario.Location = new System.Drawing.Point(406, 90);
+            this.ingreso_inventario.Multiline = true;
+            this.ingreso_inventario.Name = "ingreso_inventario";
+            this.ingreso_inventario.Size = new System.Drawing.Size(204, 29);
+            this.ingreso_inventario.TabIndex = 5;
             // 
             // label2
             // 
@@ -184,21 +184,21 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Usuario";
             // 
-            // textBox6
+            // ingreso_nombre_equipo
             // 
-            this.textBox6.Location = new System.Drawing.Point(406, 222);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(204, 29);
-            this.textBox6.TabIndex = 12;
+            this.ingreso_nombre_equipo.Location = new System.Drawing.Point(406, 222);
+            this.ingreso_nombre_equipo.Multiline = true;
+            this.ingreso_nombre_equipo.Name = "ingreso_nombre_equipo";
+            this.ingreso_nombre_equipo.Size = new System.Drawing.Size(204, 29);
+            this.ingreso_nombre_equipo.TabIndex = 12;
             // 
-            // textBox7
+            // ingreso_usuario
             // 
-            this.textBox7.Location = new System.Drawing.Point(406, 156);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(204, 29);
-            this.textBox7.TabIndex = 11;
+            this.ingreso_usuario.Location = new System.Drawing.Point(406, 156);
+            this.ingreso_usuario.Multiline = true;
+            this.ingreso_usuario.Name = "ingreso_usuario";
+            this.ingreso_usuario.Size = new System.Drawing.Size(204, 29);
+            this.ingreso_usuario.TabIndex = 11;
             // 
             // label9
             // 
@@ -218,21 +218,21 @@
             this.label10.TabIndex = 17;
             this.label10.Text = "MAC";
             // 
-            // textBox8
+            // ingreso_modelo
             // 
-            this.textBox8.Location = new System.Drawing.Point(185, 357);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(204, 29);
-            this.textBox8.TabIndex = 16;
+            this.ingreso_modelo.Location = new System.Drawing.Point(185, 357);
+            this.ingreso_modelo.Multiline = true;
+            this.ingreso_modelo.Name = "ingreso_modelo";
+            this.ingreso_modelo.Size = new System.Drawing.Size(204, 29);
+            this.ingreso_modelo.TabIndex = 16;
             // 
-            // textBox9
+            // ingreso_MAC
             // 
-            this.textBox9.Location = new System.Drawing.Point(406, 290);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(204, 29);
-            this.textBox9.TabIndex = 15;
+            this.ingreso_MAC.Location = new System.Drawing.Point(406, 290);
+            this.ingreso_MAC.Multiline = true;
+            this.ingreso_MAC.Name = "ingreso_MAC";
+            this.ingreso_MAC.Size = new System.Drawing.Size(204, 29);
+            this.ingreso_MAC.TabIndex = 15;
             // 
             // label11
             // 
@@ -243,13 +243,13 @@
             this.label11.TabIndex = 20;
             this.label11.Text = "Memoria RAM";
             // 
-            // textBox10
+            // ingreso_RAM
             // 
-            this.textBox10.Location = new System.Drawing.Point(406, 357);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(204, 29);
-            this.textBox10.TabIndex = 19;
+            this.ingreso_RAM.Location = new System.Drawing.Point(406, 357);
+            this.ingreso_RAM.Multiline = true;
+            this.ingreso_RAM.Name = "ingreso_RAM";
+            this.ingreso_RAM.Size = new System.Drawing.Size(204, 29);
+            this.ingreso_RAM.TabIndex = 19;
             // 
             // label12
             // 
@@ -260,27 +260,27 @@
             this.label12.TabIndex = 22;
             this.label12.Text = "Serie";
             // 
-            // textBox11
+            // ingreso_serie
             // 
-            this.textBox11.Location = new System.Drawing.Point(185, 422);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(204, 29);
-            this.textBox11.TabIndex = 21;
+            this.ingreso_serie.Location = new System.Drawing.Point(185, 422);
+            this.ingreso_serie.Multiline = true;
+            this.ingreso_serie.Name = "ingreso_serie";
+            this.ingreso_serie.Size = new System.Drawing.Size(204, 29);
+            this.ingreso_serie.TabIndex = 21;
             // 
-            // comboBox1
+            // cbox_vwindows
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbox_vwindows.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbox_vwindows.FormattingEnabled = true;
+            this.cbox_vwindows.Items.AddRange(new object[] {
             "",
             "Windows 10",
             "Windows 11",
             "Windows Server"});
-            this.comboBox1.Location = new System.Drawing.Point(638, 90);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 23;
+            this.cbox_vwindows.Location = new System.Drawing.Point(638, 90);
+            this.cbox_vwindows.Name = "cbox_vwindows";
+            this.cbox_vwindows.Size = new System.Drawing.Size(121, 21);
+            this.cbox_vwindows.TabIndex = 23;
             // 
             // label13
             // 
@@ -300,18 +300,18 @@
             this.label14.TabIndex = 26;
             this.label14.Text = "Version de Office";
             // 
-            // comboBox2
+            // cbox_voffice
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbox_voffice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbox_voffice.FormattingEnabled = true;
+            this.cbox_voffice.Items.AddRange(new object[] {
             "",
             "Office 2016",
             "Officec 365"});
-            this.comboBox2.Location = new System.Drawing.Point(638, 156);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 25;
+            this.cbox_voffice.Location = new System.Drawing.Point(638, 156);
+            this.cbox_voffice.Name = "cbox_voffice";
+            this.cbox_voffice.Size = new System.Drawing.Size(121, 21);
+            this.cbox_voffice.TabIndex = 25;
             // 
             // label15
             // 
@@ -322,19 +322,19 @@
             this.label15.TabIndex = 28;
             this.label15.Text = "Lojack";
             // 
-            // comboBox3
+            // cbox_lojack
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cbox_lojack.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbox_lojack.FormattingEnabled = true;
+            this.cbox_lojack.Items.AddRange(new object[] {
             "",
             "Sí",
             "No",
             "No Aplica"});
-            this.comboBox3.Location = new System.Drawing.Point(638, 222);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 27;
+            this.cbox_lojack.Location = new System.Drawing.Point(638, 222);
+            this.cbox_lojack.Name = "cbox_lojack";
+            this.cbox_lojack.Size = new System.Drawing.Size(121, 21);
+            this.cbox_lojack.TabIndex = 27;
             // 
             // label16
             // 
@@ -345,11 +345,11 @@
             this.label16.TabIndex = 30;
             this.label16.Text = "Tipo de Equipo";
             // 
-            // comboBox4
+            // cbox_tipo_equipo
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cbox_tipo_equipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbox_tipo_equipo.FormattingEnabled = true;
+            this.cbox_tipo_equipo.Items.AddRange(new object[] {
             "",
             "Notebook",
             "Escritorio",
@@ -357,10 +357,10 @@
             "Impresora",
             "Escáner",
             "Data/Proyector"});
-            this.comboBox4.Location = new System.Drawing.Point(638, 290);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 29;
+            this.cbox_tipo_equipo.Location = new System.Drawing.Point(638, 290);
+            this.cbox_tipo_equipo.Name = "cbox_tipo_equipo";
+            this.cbox_tipo_equipo.Size = new System.Drawing.Size(121, 21);
+            this.cbox_tipo_equipo.TabIndex = 29;
             // 
             // label17
             // 
@@ -371,11 +371,11 @@
             this.label17.TabIndex = 32;
             this.label17.Text = "Unidad";
             // 
-            // comboBox5
+            // cbox_unidad
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.cbox_unidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbox_unidad.FormattingEnabled = true;
+            this.cbox_unidad.Items.AddRange(new object[] {
             "",
             "Administración",
             "Educación",
@@ -388,10 +388,10 @@
             "SAE",
             "Subscretaria de Educación parvularia",
             "Subvencionar"});
-            this.comboBox5.Location = new System.Drawing.Point(638, 357);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 21);
-            this.comboBox5.TabIndex = 31;
+            this.cbox_unidad.Location = new System.Drawing.Point(638, 357);
+            this.cbox_unidad.Name = "cbox_unidad";
+            this.cbox_unidad.Size = new System.Drawing.Size(121, 21);
+            this.cbox_unidad.TabIndex = 31;
             // 
             // label18
             // 
@@ -402,13 +402,13 @@
             this.label18.TabIndex = 34;
             this.label18.Text = "Procesador";
             // 
-            // textBox12
+            // ingreso_procesador
             // 
-            this.textBox12.Location = new System.Drawing.Point(185, 487);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(204, 29);
-            this.textBox12.TabIndex = 33;
+            this.ingreso_procesador.Location = new System.Drawing.Point(185, 487);
+            this.ingreso_procesador.Multiline = true;
+            this.ingreso_procesador.Name = "ingreso_procesador";
+            this.ingreso_procesador.Size = new System.Drawing.Size(204, 29);
+            this.ingreso_procesador.TabIndex = 33;
             // 
             // label19
             // 
@@ -419,13 +419,13 @@
             this.label19.TabIndex = 36;
             this.label19.Text = "Espacio en Disco HDD/SSD";
             // 
-            // textBox13
+            // ingreso_espacio
             // 
-            this.textBox13.Location = new System.Drawing.Point(406, 422);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(204, 29);
-            this.textBox13.TabIndex = 35;
+            this.ingreso_espacio.Location = new System.Drawing.Point(406, 422);
+            this.ingreso_espacio.Multiline = true;
+            this.ingreso_espacio.Name = "ingreso_espacio";
+            this.ingreso_espacio.Size = new System.Drawing.Size(204, 29);
+            this.ingreso_espacio.TabIndex = 35;
             // 
             // label20
             // 
@@ -436,20 +436,20 @@
             this.label20.TabIndex = 38;
             this.label20.Text = "Departamento";
             // 
-            // comboBox6
+            // cbox_departamento
             // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.cbox_departamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbox_departamento.FormattingEnabled = true;
+            this.cbox_departamento.Items.AddRange(new object[] {
             "",
             "Gabinete",
             "Planificación",
             "Educación",
             "Administración"});
-            this.comboBox6.Location = new System.Drawing.Point(638, 422);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 21);
-            this.comboBox6.TabIndex = 37;
+            this.cbox_departamento.Location = new System.Drawing.Point(638, 422);
+            this.cbox_departamento.Name = "cbox_departamento";
+            this.cbox_departamento.Size = new System.Drawing.Size(121, 21);
+            this.cbox_departamento.TabIndex = 37;
             // 
             // btn_agregar
             // 
@@ -468,43 +468,43 @@
             this.ClientSize = new System.Drawing.Size(956, 630);
             this.Controls.Add(this.btn_agregar);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.comboBox6);
+            this.Controls.Add(this.cbox_departamento);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.ingreso_espacio);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.ingreso_procesador);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.cbox_unidad);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.cbox_tipo_equipo);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cbox_lojack);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbox_voffice);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbox_vwindows);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.ingreso_serie);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.ingreso_RAM);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.ingreso_modelo);
+            this.Controls.Add(this.ingreso_MAC);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.ingreso_nombre_equipo);
+            this.Controls.Add(this.ingreso_usuario);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ingreso_inventario);
+            this.Controls.Add(this.ingreso_marca);
+            this.Controls.Add(this.ingreso_RUT);
+            this.Controls.Add(this.ingreso_apellidos);
+            this.Controls.Add(this.ingreso_nombres);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "agregar";
@@ -517,11 +517,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox ingreso_nombres;
+        private System.Windows.Forms.TextBox ingreso_apellidos;
+        private System.Windows.Forms.TextBox ingreso_RUT;
+        private System.Windows.Forms.TextBox ingreso_marca;
+        private System.Windows.Forms.TextBox ingreso_inventario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -529,32 +529,32 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox ingreso_nombre_equipo;
+        private System.Windows.Forms.TextBox ingreso_usuario;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox ingreso_modelo;
+        private System.Windows.Forms.TextBox ingreso_MAC;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox ingreso_RAM;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox ingreso_serie;
+        private System.Windows.Forms.ComboBox cbox_vwindows;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbox_voffice;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbox_lojack;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cbox_tipo_equipo;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cbox_unidad;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox ingreso_procesador;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox ingreso_espacio;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox cbox_departamento;
         private System.Windows.Forms.Button btn_agregar;
     }
 }
