@@ -462,12 +462,13 @@
             // 
             // btn_eliminar
             // 
-            this.btn_eliminar.Location = new System.Drawing.Point(543, 577);
+            this.btn_eliminar.Location = new System.Drawing.Point(548, 577);
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Size = new System.Drawing.Size(75, 23);
             this.btn_eliminar.TabIndex = 79;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // label1
             // 
@@ -528,6 +529,7 @@
             this.Controls.Add(this.modificar_apellido);
             this.Controls.Add(this.modificar_nombre);
             this.Name = "modificar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -537,46 +539,46 @@
         #endregion
 
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox modificarcbox_departamento;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox modificar_espacio;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox modificar_procesador;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox modificarcbox_unidad;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox modificarcbox_tipo_equipo;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox modificarcbox_lojack;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox modificarcbox_voffice;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox modificarcbox_vwindows;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox modificar_serie;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox modificar_RAM;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox modificar_modelo;
-        private System.Windows.Forms.TextBox modificar_MAC;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox modificar_nombre_equipo;
-        private System.Windows.Forms.TextBox modificar_usuario;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox modificar_inventario;
-        private System.Windows.Forms.TextBox modificar_marca;
-        private System.Windows.Forms.TextBox modificar_RUT;
-        private System.Windows.Forms.TextBox modificar_apellido;
-        private System.Windows.Forms.TextBox modificar_nombre;
         private System.Windows.Forms.Button btn_modificar;
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.ComboBox modificarcbox_departamento;
+        public System.Windows.Forms.TextBox modificar_espacio;
+        public System.Windows.Forms.TextBox modificar_procesador;
+        public System.Windows.Forms.ComboBox modificarcbox_unidad;
+        public System.Windows.Forms.ComboBox modificarcbox_tipo_equipo;
+        public System.Windows.Forms.ComboBox modificarcbox_lojack;
+        public System.Windows.Forms.ComboBox modificarcbox_voffice;
+        public System.Windows.Forms.ComboBox modificarcbox_vwindows;
+        public System.Windows.Forms.TextBox modificar_serie;
+        public System.Windows.Forms.TextBox modificar_RAM;
+        public System.Windows.Forms.TextBox modificar_modelo;
+        public System.Windows.Forms.TextBox modificar_MAC;
+        public System.Windows.Forms.TextBox modificar_nombre_equipo;
+        public System.Windows.Forms.TextBox modificar_usuario;
+        public System.Windows.Forms.TextBox modificar_inventario;
+        public System.Windows.Forms.TextBox modificar_marca;
+        public System.Windows.Forms.TextBox modificar_RUT;
+        public System.Windows.Forms.TextBox modificar_apellido;
+        public System.Windows.Forms.TextBox modificar_nombre;
     }
 }

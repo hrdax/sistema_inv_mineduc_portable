@@ -68,6 +68,7 @@
             this.btn_mod_el.TabIndex = 2;
             this.btn_mod_el.Text = "Modificar/Eliminar";
             this.btn_mod_el.UseVisualStyleBackColor = false;
+            this.btn_mod_el.Click += new System.EventHandler(this.btn_mod_el_Click);
             // 
             // btn_excel
             // 

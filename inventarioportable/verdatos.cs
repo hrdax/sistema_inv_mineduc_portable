@@ -16,5 +16,12 @@ namespace inventarioportable
         {
             InitializeComponent();
         }
+        //abre form de modificar y le entrega los valores
+        private void btn_mod_el_Click(object sender, EventArgs e)
+        {
+            modificar mod = new modificar();
+            mod.modificar_nombre.Text = "alo";
+            mod.Show();
+        }
     }
 }

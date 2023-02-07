@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace inventarioportable
 {
-    public partial class modificar : Form
+    public partial class confirm_eliminar : Form
     {
-        public modificar()
+        public confirm_eliminar()
         {
             InitializeComponent();
-        }
-
-        private void btn_eliminar_Click(object sender, EventArgs e)
-        {
-            confirm_eliminar conf = new confirm_eliminar();
-            conf.Show();
         }
     }
 }

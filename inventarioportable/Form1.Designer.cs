@@ -109,7 +109,7 @@
             this.Controls.Add(this.panel_opcion);
             this.Controls.Add(this.panel_lateral);
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel_lateral.ResumeLayout(false);
             this.ResumeLayout(false);
