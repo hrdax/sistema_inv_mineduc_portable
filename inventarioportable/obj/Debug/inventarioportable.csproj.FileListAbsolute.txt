@@ -1,0 +1,11 @@
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\inventarioportable.exe.config
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\inventarioportable.exe
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\inventarioportable.pdb
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.AssemblyReference.cache
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.SuggestedBindingRedirects.cache
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.Form1.resources
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.Properties.Resources.resources
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.GenerateResource.cache
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.CoreCompileInputs.cache
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.exe
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.pdb
