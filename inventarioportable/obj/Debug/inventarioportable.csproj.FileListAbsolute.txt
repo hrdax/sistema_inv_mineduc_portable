@@ -9,3 +9,4 @@ C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debu
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.CoreCompileInputs.cache
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.exe
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.pdb
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.verdatos.resources

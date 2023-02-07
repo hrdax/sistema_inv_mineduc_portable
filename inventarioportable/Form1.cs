@@ -16,5 +16,28 @@ namespace inventarioportable
         {
             InitializeComponent();
         }
+
+        private void btn_verdatos_Click(object sender, EventArgs e)
+        {
+            this.abrirpanel(new verdatos());
+        }
+        //crea form nulo
+        private Form formactivo = null;
+        //funcion que abrira la opcion del menu
+        private void abrirpanel(Form formhijo)
+        {
+            //si el formulario activo no es nulo cerrara el formulario
+            if (formactivo != null)
+                formactivo.Close();
+            // guarda el formhijo en el form activo para que ya no quede nulo
+            formactivo = formhijo;
+            formhijo.TopLevel = false;
+            formhijo.FormBorderStyle = FormBorderStyle.None;
+            formhijo.Dock = DockStyle.Fill;
+            panel_opcion.Controls.Add(formhijo);
+            panel_opcion.Tag = formhijo;
+            formhijo.BringToFront();
+            formhijo.Show();
+        }
     }
 }
