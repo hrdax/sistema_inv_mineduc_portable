@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace inventarioportable
 {
-    public partial class confirm_eliminar : Form
+    public partial class conf_etodo : Form
     {
-        public confirm_eliminar()
+        public conf_etodo()
         {
             InitializeComponent();
         }
 
-        private void btn_no_Click(object sender, EventArgs e)
+        private void btn_tno_Click(object sender, EventArgs e)
         {
             this.Close();
         }

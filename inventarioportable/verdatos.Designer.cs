@@ -95,6 +95,7 @@
             this.btn_borrartodo.TabIndex = 4;
             this.btn_borrartodo.Text = "Borrar TODO";
             this.btn_borrartodo.UseVisualStyleBackColor = false;
+            this.btn_borrartodo.Click += new System.EventHandler(this.btn_borrartodo_Click);
             // 
             // verdatos
             // 

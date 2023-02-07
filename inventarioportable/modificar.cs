@@ -22,5 +22,15 @@ namespace inventarioportable
             confirm_eliminar conf = new confirm_eliminar();
             conf.Show();
         }
+
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Registro modificado");
+        }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

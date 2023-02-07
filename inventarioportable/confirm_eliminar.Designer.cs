@@ -79,6 +79,7 @@
             this.btn_no.TabIndex = 4;
             this.btn_no.Text = "No";
             this.btn_no.UseVisualStyleBackColor = true;
+            this.btn_no.Click += new System.EventHandler(this.btn_no_Click);
             // 
             // confirm_eliminar
             // 

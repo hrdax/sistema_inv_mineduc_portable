@@ -23,5 +23,11 @@ namespace inventarioportable
             mod.modificar_nombre.Text = "alo";
             mod.Show();
         }
+
+        private void btn_borrartodo_Click(object sender, EventArgs e)
+        {
+            conf_etodo conftodo = new conf_etodo();
+            conftodo.Show();
+        }
     }
 }
