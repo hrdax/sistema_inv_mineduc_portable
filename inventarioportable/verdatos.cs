@@ -25,7 +25,12 @@ namespace inventarioportable
         {
             //crea un objeto del form modificar
             modificar mod = new modificar();
-
+            foreach(DataGridViewRow row in this.grid_db.SelectedRows)
+            {
+                mod.lblmod_id.Text = row.Cells[0].Value.ToString();
+                
+                //mod.modificar_nombre.Text = row.Cells[1].Value.ToString();
+            }
             mod.Show();
         }
         //boton que borra todos los registros
