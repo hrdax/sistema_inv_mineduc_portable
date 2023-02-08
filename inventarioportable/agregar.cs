@@ -70,8 +70,8 @@ namespace inventarioportable
                 Version_Office = cbox_voffice.Text,
                 Lojack = cbox_lojack.Text,
             };
-           
 
+            bool resp = controladorregistro.Instancia.insert(registro_objeto);
             MessageBox.Show("Agregado");
             //limpia los campos
             this.limpiar_campos();

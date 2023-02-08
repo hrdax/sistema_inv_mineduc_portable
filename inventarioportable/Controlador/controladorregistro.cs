@@ -140,6 +140,51 @@ namespace inventarioportable.Controlador
             }
         }
 
+        //metodo modificar
+        public bool eliminar(Registro obj)
+        {
+            bool resp = true;
+            using (SQLiteConnection con = new SQLiteConnection(cdena))
+            {
+                con.Open();
+                //query update
+                string query = "DELETE FROM inventario WHERE inventarioid = @inventarioid";
+                //sqlcommand
+                SQLiteCommand cmd = new SQLiteCommand(query, con);
+                //se añade los parametros al command
+                cmd.Parameters.Add(new SQLiteParameter("@inventarioid", obj.inventarioid));
+                // el command sera de tipo texto
+                cmd.CommandType = System.Data.CommandType.Text;
+                //verifica si se ejecuto correctamente la query analizando el numero de filas afectadas
+                if (cmd.ExecuteNonQuery() < 1)
+                {
+                    resp = false;
+                }
+                return resp;
+            }
+        }
+
+        public bool eliminarTODO(Registro obj)
+        {
+            bool resp = true;
+            using (SQLiteConnection con = new SQLiteConnection(cdena))
+            {
+                con.Open();
+                //query update
+                string query = "DELETE FROM inventario";
+                //sqlcommand
+                SQLiteCommand cmd = new SQLiteCommand(query, con);
+                // el command sera de tipo texto
+                cmd.CommandType = System.Data.CommandType.Text;
+                //verifica si se ejecuto correctamente la query analizando el numero de filas afectadas
+                if (cmd.ExecuteNonQuery() < 1)
+                {
+                    resp = false;
+                }
+                return resp;
+            }
+        }
+
         //crea una funcion de tipo lista de la clase registro
         public List<Registro> list()
         {

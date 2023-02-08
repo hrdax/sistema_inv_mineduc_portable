@@ -70,6 +70,7 @@
             this.btn_si.TabIndex = 3;
             this.btn_si.Text = "Sí";
             this.btn_si.UseVisualStyleBackColor = true;
+            this.btn_si.Click += new System.EventHandler(this.btn_si_Click);
             // 
             // btn_no
             // 
@@ -102,9 +103,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbl_id;
-        private System.Windows.Forms.Label lbl_nombre;
         private System.Windows.Forms.Button btn_si;
         private System.Windows.Forms.Button btn_no;
+        public System.Windows.Forms.Label lbl_id;
+        public System.Windows.Forms.Label lbl_nombre;
     }
 }

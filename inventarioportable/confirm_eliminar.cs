@@ -1,4 +1,6 @@
-﻿using System;
+﻿using inventarioportable.Controlador;
+using inventarioportable.Modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +21,21 @@ namespace inventarioportable
 
         private void btn_no_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void btn_si_Click(object sender, EventArgs e)
+        {
+            // crea un objeto de la clase registro
+            Registro registro_objeto = new Registro()
+            {
+                //se le entrega a los atributos del objeto los valores de los inputs
+                inventarioid = Int32.Parse(lbl_id.Text)
+            };
+            // guarda una respuseta al momento de insertar para poder saber si esta insertando correctamente
+            bool resp = controladorregistro.Instancia.eliminar(registro_objeto);
+            MessageBox.Show("Registro eliminado");
+            
             this.Close();
         }
     }

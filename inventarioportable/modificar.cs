@@ -22,7 +22,10 @@ namespace inventarioportable
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
             confirm_eliminar conf = new confirm_eliminar();
+            conf.lbl_id.Text = lblmod_id.Text;
+            conf.lbl_nombre.Text = modificar_nombre.Text;
             conf.Show();
+            
         }
 
         private void btn_modificar_Click(object sender, EventArgs e)
