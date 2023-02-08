@@ -42,6 +42,7 @@
             this.grid_db.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_db.Location = new System.Drawing.Point(12, 65);
             this.grid_db.Name = "grid_db";
+            this.grid_db.ReadOnly = true;
             this.grid_db.RowHeadersVisible = false;
             this.grid_db.Size = new System.Drawing.Size(932, 486);
             this.grid_db.TabIndex = 0;

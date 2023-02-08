@@ -6,7 +6,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,7 +16,29 @@ namespace inventarioportable
 {
     public partial class agregar : Form
     {
-
+        //funcion que limpiara los campos
+        public void limpiar_campos()
+        {
+            ingreso_nombres.Text = "";
+            ingreso_apellidos.Text = "";
+            ingreso_RUT.Text = "";
+            cbox_departamento.Text = "";
+            cbox_unidad.Text = "";
+            cbox_tipo_equipo.Text = "";
+            ingreso_marca.Text = "";
+            ingreso_modelo.Text = "";
+            ingreso_serie.Text = "";
+            ingreso_inventario.Text = "";
+            ingreso_usuario.Text = "";
+            ingreso_nombre_equipo.Text = "";
+            ingreso_MAC.Text = "";
+            ingreso_RAM.Text = "";
+            ingreso_espacio.Text = "";
+            ingreso_procesador.Text = "";
+            cbox_vwindows.Text = "";
+            cbox_voffice.Text = "";
+            cbox_lojack.Text = "";
+        }
         public agregar()
         {
             InitializeComponent();
@@ -50,7 +74,10 @@ namespace inventarioportable
             bool resp = controladorregistro.Instancia.insert(registro_objeto);
 
             MessageBox.Show("Agregado");
+            //limpia los campos
+            this.limpiar_campos();
 
         }
+
     }
 }

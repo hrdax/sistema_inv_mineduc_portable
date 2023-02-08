@@ -10,6 +10,7 @@ using System.Data.SQLite;
 using System.Reflection;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
+using System.Drawing;
 
 namespace inventarioportable.Controlador
 {
@@ -89,6 +90,56 @@ namespace inventarioportable.Controlador
             return resp;
 
         }
+        //metodo modificar
+        public bool modificar(Registro obj)
+        {
+            bool resp = true;
+            using (SQLiteConnection con = new SQLiteConnection(cdena))
+            {
+                con.Open();
+                //query update
+                string query = "UPDATE inventario SET " +
+                    "Nombre = @Nombre, Apellidos = @Apellidos, Rut = @Rut, Departamento = @Departamento," +
+                    "Unidad = @Unidad, Tipo_de_Equipo = Tipo_de_Equipo, " +
+                    "Marca = @Marca, Modelo = @Modelo, Serie = @Serie, Inventario = @Inventario, " +
+                    "Usuario = @Usuario, Nombre_de_Equipo = @Nombre_de_Equipo, " +
+                    "MAC = @MAC, RAM = @RAM, Espacio_Disco = @Espacio_Disco, Procesador = @Procesador," +
+                    "Version_Windows = @Version_Windows, Version_Office = @Version_Office, " +
+                    "Lojack = @Lojack WHERE inventarioid = @inventarioid";
+                //sqlcommand
+                SQLiteCommand cmd = new SQLiteCommand(query, con);
+                //se añade los parametros al command
+                cmd.Parameters.Add(new SQLiteParameter("@inventarioid", obj.inventarioid));
+                cmd.Parameters.Add(new SQLiteParameter("@Nombre", obj.Nombre));
+                cmd.Parameters.Add(new SQLiteParameter("@Apellidos", obj.Apellidos));
+                cmd.Parameters.Add(new SQLiteParameter("@Rut", obj.Rut));
+                cmd.Parameters.Add(new SQLiteParameter("@Departamento", obj.Departamento));
+                cmd.Parameters.Add(new SQLiteParameter("@Unidad", obj.Unidad));
+                cmd.Parameters.Add(new SQLiteParameter("@Tipo_de_Equipo", obj.Tipo_de_Equipo));
+                cmd.Parameters.Add(new SQLiteParameter("@Marca", obj.Marca));
+                cmd.Parameters.Add(new SQLiteParameter("@Modelo", obj.Modelo));
+                cmd.Parameters.Add(new SQLiteParameter("@Serie", obj.Serie));
+                cmd.Parameters.Add(new SQLiteParameter("@Inventario", obj.Inventario));
+                cmd.Parameters.Add(new SQLiteParameter("@Usuario", obj.Usuario));
+                cmd.Parameters.Add(new SQLiteParameter("@Nombre_de_Equipo", obj.Nombre_de_Equipo));
+                cmd.Parameters.Add(new SQLiteParameter("@MAC", obj.MAC));
+                cmd.Parameters.Add(new SQLiteParameter("@RAM", obj.RAM));
+                cmd.Parameters.Add(new SQLiteParameter("@Espacio_Disco", obj.Espacio_Disco));
+                cmd.Parameters.Add(new SQLiteParameter("@Procesador", obj.Procesador));
+                cmd.Parameters.Add(new SQLiteParameter("@Version_Windows", obj.Version_Windows));
+                cmd.Parameters.Add(new SQLiteParameter("@Version_Office", obj.Version_Office));
+                cmd.Parameters.Add(new SQLiteParameter("@Lojack", obj.Lojack));
+                // el command sera de tipo texto
+                cmd.CommandType = System.Data.CommandType.Text;
+                //verifica si se ejecuto correctamente la query analizando el numero de filas afectadas
+                if (cmd.ExecuteNonQuery() < 1)
+                {
+                    resp = false;
+                }
+                return resp;
+            }
+        }
+
         //crea una funcion de tipo lista de la clase registro
         public List<Registro> list()
         {

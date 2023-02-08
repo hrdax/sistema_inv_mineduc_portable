@@ -70,6 +70,7 @@
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblmod_id = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label20
@@ -482,12 +483,22 @@
             this.label1.TabIndex = 80;
             this.label1.Text = "Modificar Registro";
             // 
+            // lblmod_id
+            // 
+            this.lblmod_id.AutoSize = true;
+            this.lblmod_id.Location = new System.Drawing.Point(-3, -2);
+            this.lblmod_id.Name = "lblmod_id";
+            this.lblmod_id.Size = new System.Drawing.Size(78, 13);
+            this.lblmod_id.TabIndex = 81;
+            this.lblmod_id.Text = "No encontrado";
+            // 
             // modificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(889, 646);
+            this.Controls.Add(this.lblmod_id);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.btn_cancelar);
@@ -582,5 +593,6 @@
         public System.Windows.Forms.TextBox modificar_RUT;
         public System.Windows.Forms.TextBox modificar_apellido;
         public System.Windows.Forms.TextBox modificar_nombre;
+        public System.Windows.Forms.Label lblmod_id;
     }
 }
