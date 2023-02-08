@@ -1,4 +1,6 @@
-﻿using System;
+﻿using inventarioportable.Controlador;
+using inventarioportable.Modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +21,16 @@ namespace inventarioportable
 
         private void btn_tno_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void btn_tsi_Click(object sender, EventArgs e)
+        {
+
+            //eliminara todo desde el metodo
+            bool resp = controladorregistro.Instancia.eliminarTODO();
+            MessageBox.Show("Registros eliminados");
+
             this.Close();
         }
     }

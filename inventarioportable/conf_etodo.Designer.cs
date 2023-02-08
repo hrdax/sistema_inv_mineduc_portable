@@ -62,6 +62,7 @@
             this.btn_tsi.TabIndex = 2;
             this.btn_tsi.Text = "Sí";
             this.btn_tsi.UseVisualStyleBackColor = true;
+            this.btn_tsi.Click += new System.EventHandler(this.btn_tsi_Click);
             // 
             // btn_tno
             // 

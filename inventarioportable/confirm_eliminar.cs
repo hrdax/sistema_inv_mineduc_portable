@@ -29,7 +29,7 @@ namespace inventarioportable
             // crea un objeto de la clase registro
             Registro registro_objeto = new Registro()
             {
-                //se le entrega a los atributos del objeto los valores de los inputs
+                //entrega el id 
                 inventarioid = Int32.Parse(lbl_id.Text)
             };
             // guarda una respuseta al momento de insertar para poder saber si esta insertando correctamente

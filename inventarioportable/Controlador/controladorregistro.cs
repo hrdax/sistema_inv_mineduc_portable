@@ -164,7 +164,7 @@ namespace inventarioportable.Controlador
             }
         }
 
-        public bool eliminarTODO(Registro obj)
+        public bool eliminarTODO()
         {
             bool resp = true;
             using (SQLiteConnection con = new SQLiteConnection(cdena))
