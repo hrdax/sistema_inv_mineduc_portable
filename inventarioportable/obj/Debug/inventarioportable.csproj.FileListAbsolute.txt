@@ -14,3 +14,4 @@ C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debu
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.modificar.resources
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.confirm_eliminar.resources
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.conf_etodo.resources
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\inventarioDB.db
