@@ -100,7 +100,7 @@ namespace inventarioportable.Controlador
                 //query update
                 string query = "UPDATE inventario SET " +
                     "Nombre = @Nombre, Apellidos = @Apellidos, Rut = @Rut, Departamento = @Departamento," +
-                    "Unidad = @Unidad, Tipo_de_Equipo = Tipo_de_Equipo, " +
+                    "Unidad = @Unidad, Tipo_de_Equipo = @Tipo_de_Equipo, " +
                     "Marca = @Marca, Modelo = @Modelo, Serie = @Serie, Inventario = @Inventario, " +
                     "Usuario = @Usuario, Nombre_de_Equipo = @Nombre_de_Equipo, " +
                     "MAC = @MAC, RAM = @RAM, Espacio_Disco = @Espacio_Disco, Procesador = @Procesador," +

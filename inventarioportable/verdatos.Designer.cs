@@ -46,6 +46,7 @@
             this.grid_db.RowHeadersVisible = false;
             this.grid_db.Size = new System.Drawing.Size(932, 486);
             this.grid_db.TabIndex = 0;
+            this.grid_db.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_db_CellDoubleClick);
             // 
             // label1
             // 

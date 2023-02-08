@@ -26,49 +26,6 @@ namespace inventarioportable
             //crea un objeto del form modificar
             modificar mod = new modificar();
 
-            //guarda los valores de la columna seleccionado
-            String id = grid_db.SelectedRows[0].Index.ToString();
-            String nombres = Convert.ToString(grid_db.SelectedRows[0].Cells[1].Value);
-            String apellidos = Convert.ToString(grid_db.SelectedRows[0].Cells[2].Value);
-            String rut = Convert.ToString(grid_db.SelectedRows[0].Cells[3].Value);
-            String departamento = Convert.ToString(grid_db.SelectedRows[0].Cells[4].Value);
-            String unidad = Convert.ToString(grid_db.SelectedRows[0].Cells[5].Value);
-            String tipo_equipo = Convert.ToString(grid_db.SelectedRows[0].Cells[6].Value);
-            String marca = Convert.ToString(grid_db.SelectedRows[0].Cells[7].Value);
-            String modelo = Convert.ToString(grid_db.SelectedRows[0].Cells[8].Value);
-            String serie = Convert.ToString(grid_db.SelectedRows[0].Cells[9].Value);
-            String inventario = Convert.ToString(grid_db.SelectedRows[0].Cells[10].Value);
-            String usuario = Convert.ToString(grid_db.SelectedRows[0].Cells[11].Value);
-            String nombre_equipo = Convert.ToString(grid_db.SelectedRows[0].Cells[12].Value);
-            String mac = Convert.ToString(grid_db.SelectedRows[0].Cells[13].Value);
-            String memoria_ram = Convert.ToString(grid_db.SelectedRows[0].Cells[14].Value);
-            String espacio_disco = Convert.ToString(grid_db.SelectedRows[0].Cells[15].Value);
-            String procesador = Convert.ToString(grid_db.SelectedRows[0].Cells[16].Value);
-            String version_windows = Convert.ToString(grid_db.SelectedRows[0].Cells[17].Value);
-            String version_office = Convert.ToString(grid_db.SelectedRows[0].Cells[18].Value);
-            String lojack = Convert.ToString(grid_db.SelectedRows[0].Cells[19].Value);
-
-            //entrega los valores a los campos de modificar
-            mod.lblmod_id.Text = id;
-            mod.modificar_nombre.Text = nombres;
-            mod.modificar_apellido.Text = apellidos;
-            mod.modificar_RUT.Text = rut;
-            mod.modificarcbox_departamento.Text = departamento;
-            mod.modificarcbox_unidad.Text = unidad;
-            mod.modificarcbox_tipo_equipo.Text = tipo_equipo;
-            mod.modificar_marca.Text = marca;
-            mod.modificar_modelo.Text = modelo;
-            mod.modificar_serie.Text = serie;
-            mod.modificar_inventario.Text = inventario;
-            mod.modificar_usuario.Text = usuario;
-            mod.modificar_nombre_equipo.Text = nombre_equipo;
-            mod.modificar_MAC.Text = mac;
-            mod.modificar_RAM.Text = memoria_ram;
-            mod.modificar_espacio.Text = espacio_disco;
-            mod.modificar_procesador.Text = procesador;
-            mod.modificarcbox_vwindows.Text = version_windows;
-            mod.modificarcbox_voffice.Text = version_office;
-            mod.modificarcbox_lojack.Text = lojack;
             mod.Show();
         }
         //boton que borra todos los registros
@@ -88,6 +45,44 @@ namespace inventarioportable
         {
             listar();
             this.grid_db.Columns["inventarioid"].Visible = false;
+        }
+
+        private void grid_db_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //verifica los indices de las filas si son mayores o igual a 0
+            if (e.RowIndex >= 0)
+            {
+                //crea un objeto row desde las filas del dvg
+                DataGridViewRow row = this.grid_db.Rows[e.RowIndex];
+                //crea un objeto de form de modificar
+                modificar mod = new modificar();
+                //entrega los valores a los campos a modificar
+                mod.lblmod_id.Text = row.Cells["inventarioid"].Value.ToString();
+                mod.modificar_nombre.Text = row.Cells["Nombre"].Value.ToString();
+                mod.modificar_apellido.Text = row.Cells["Apellidos"].Value.ToString();
+                mod.modificar_RUT.Text = row.Cells["Rut"].Value.ToString();
+                mod.modificarcbox_departamento.Text = row.Cells["Departamento"].Value.ToString();
+                mod.modificarcbox_unidad.Text = row.Cells["Unidad"].Value.ToString();
+                mod.modificarcbox_tipo_equipo.Text = row.Cells["Tipo_de_Equipo"].Value.ToString();
+                mod.modificar_marca.Text = row.Cells["Marca"].Value.ToString();
+                mod.modificar_modelo.Text = row.Cells["modelo"].Value.ToString();
+                mod.modificar_serie.Text = row.Cells["serie"].Value.ToString();
+                mod.modificar_inventario.Text = row.Cells["inventario"].Value.ToString();
+                mod.modificar_usuario.Text = row.Cells["usuario"].Value.ToString();
+                mod.modificar_nombre_equipo.Text = row.Cells["Nombre_de_Equipo"].Value.ToString();
+                mod.modificar_MAC.Text = row.Cells["MAC"].Value.ToString();
+                mod.modificar_RAM.Text = row.Cells["RAM"].Value.ToString();
+                mod.modificar_espacio.Text = row.Cells["Espacio_Disco"].Value.ToString();
+                mod.modificar_procesador.Text = row.Cells["Procesador"].Value.ToString();
+                mod.modificarcbox_vwindows.Text = row.Cells["Version_Windows"].Value.ToString();
+                mod.modificarcbox_voffice.Text = row.Cells["Version_Office"].Value.ToString();
+                mod.modificarcbox_lojack.Text = row.Cells["Lojack"].Value.ToString();
+                //muestra la ventana de modificar
+                mod.Show();
+
+                
+
+            }
         }
     }
 }
