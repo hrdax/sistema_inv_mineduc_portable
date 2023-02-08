@@ -15,3 +15,12 @@ C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debu
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.confirm_eliminar.resources
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.conf_etodo.resources
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\inventarioDB.db
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\EntityFramework.dll
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\System.Data.SQLite.dll
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\EntityFramework.xml
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\System.Data.SQLite.xml
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.CopyComplete

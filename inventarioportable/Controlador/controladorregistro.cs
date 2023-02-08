@@ -47,15 +47,16 @@ namespace inventarioportable.Controlador
                 //query insert
                 string query = "INSERT INTO inventario(" +
                     "Nombre, Apellidos, Rut, Departamento, Unidad, Tipo_de_Equipo, " +
-                    "Marca, Modelo,Serie, Inventario, Usuario, Nombre_de_Equipo, " +
-                    "MAC, RAM, Espacio_Disco, Procesador, Version_Windows, Version_Office, Lojack" +
+                    "Marca, Modelo, Serie, Inventario, Usuario, Nombre_de_Equipo, " +
+                    "MAC, RAM, Espacio_Disco, Procesador, Version_Windows, Version_Office, Lojack)" +
                     "VALUES(" +
-                    "@Nombre, @Apellidos,@Rut, @Departamento, @Unidad, @Tipo_de_Equipo," +
+                    "@Nombre, @Apellidos, @Rut, @Departamento, @Unidad, @Tipo_de_Equipo," +
                     "@Marca, @Modelo, @Serie, @Inventario, @Usuario, @Nombre_de_Equipo," +
                     "@MAC, @RAM, @Espacio_Disco, @Procesador, @Version_Windows, @Version_Office, @Lojack)";
                 //sqlcommand
                 SQLiteCommand cmd = new SQLiteCommand(query, con);
                 //se añade los parametros al command
+                
                 cmd.Parameters.Add(new SQLiteParameter("@Nombre", obj.Nombre));
                 cmd.Parameters.Add(new SQLiteParameter("@Apellidos", obj.Apellidos));
                 cmd.Parameters.Add(new SQLiteParameter("@Rut", obj.Rut));
@@ -67,7 +68,7 @@ namespace inventarioportable.Controlador
                 cmd.Parameters.Add(new SQLiteParameter("@Serie", obj.Serie));
                 cmd.Parameters.Add(new SQLiteParameter("@Inventario", obj.Inventario));
                 cmd.Parameters.Add(new SQLiteParameter("@Usuario", obj.Usuario));
-                cmd.Parameters.Add(new SQLiteParameter("@Nombre_de_Equpo", obj.Nombre_de_Equipo));
+                cmd.Parameters.Add(new SQLiteParameter("@Nombre_de_Equipo", obj.Nombre_de_Equipo));
                 cmd.Parameters.Add(new SQLiteParameter("@MAC", obj.MAC));
                 cmd.Parameters.Add(new SQLiteParameter("@RAM", obj.RAM));
                 cmd.Parameters.Add(new SQLiteParameter("@Espacio_Disco", obj.Espacio_Disco));
@@ -116,7 +117,7 @@ namespace inventarioportable.Controlador
                             // datos que leera y parseara a string
                             inventarioid = int.Parse(reader["inventarioid"].ToString()),
                             Nombre = reader["Nombre"].ToString(),
-                            Apellidos = reader["Apellido"].ToString(),
+                            Apellidos = reader["Apellidos"].ToString(),
                             Rut = reader["Rut"].ToString(),
                             Departamento = reader["Departamento"].ToString(),
                             Unidad = reader["Unidad"].ToString(),
@@ -130,6 +131,7 @@ namespace inventarioportable.Controlador
                             MAC = reader["MAC"].ToString(),
                             RAM = reader["RAM"].ToString(),
                             Espacio_Disco = reader["Espacio_Disco"].ToString(),
+                            Procesador = reader["Procesador"].ToString(),
                             Version_Windows = reader["Version_Windows"].ToString(),
                             Version_Office = reader["Version_Office"].ToString(),
                             Lojack = reader["Lojack"].ToString(),

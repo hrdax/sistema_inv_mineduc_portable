@@ -31,6 +31,7 @@ namespace inventarioportable
                 Rut = ingreso_RUT.Text,
                 Departamento = cbox_departamento.Text,
                 Unidad = cbox_unidad.Text,
+                Tipo_de_Equipo = cbox_tipo_equipo.Text,
                 Marca = ingreso_marca.Text,
                 Modelo = ingreso_modelo.Text,
                 Serie = ingreso_serie.Text,
@@ -47,6 +48,8 @@ namespace inventarioportable
             };
             // guarda una respuseta al momento de insertar para poder saber si esta insertando correctamente
             bool resp = controladorregistro.Instancia.insert(registro_objeto);
+
+            MessageBox.Show("Agregado");
 
         }
     }

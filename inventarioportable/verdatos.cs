@@ -40,6 +40,7 @@ namespace inventarioportable
         private void verdatos_Load(object sender, EventArgs e)
         {
             listar();
+            this.grid_db.Columns["inventarioid"].Visible = false;
         }
     }
 }
