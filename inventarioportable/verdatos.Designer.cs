@@ -111,6 +111,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "verdatos";
             this.Text = "verdatos";
+            this.Load += new System.EventHandler(this.verdatos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid_db)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -118,11 +119,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView grid_db;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_mod_el;
         private System.Windows.Forms.Button btn_excel;
         private System.Windows.Forms.Button btn_borrartodo;
+        public System.Windows.Forms.DataGridView grid_db;
     }
 }

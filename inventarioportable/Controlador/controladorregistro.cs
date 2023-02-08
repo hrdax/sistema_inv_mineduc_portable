@@ -43,6 +43,7 @@ namespace inventarioportable.Controlador
 
             using (SQLiteConnection con = new SQLiteConnection(cdena)) 
             {
+                con.Open();
                 //query insert
                 string query = "INSERT INTO inventario(" +
                     "Nombre, Apellidos, Rut, Departamento, Unidad, Tipo_de_Equipo, " +
@@ -87,25 +88,32 @@ namespace inventarioportable.Controlador
             return resp;
 
         }
+        //crea una funcion de tipo lista de la clase registro
         public List<Registro> list()
         {
+            //crea un objeto lista de registro
             List<Registro> lista = new List<Registro>();
-
+            //usa la coneccion para poder luego hacer la query
             using (SQLiteConnection con = new SQLiteConnection(cdena))
             {
+                //abre la conexion
                 con.Open();
-                //query insert
+                //query select todo de inventario
                 string query = "SELECT * FROM inventario";
                 //sqlcommand
                 SQLiteCommand cmd = new SQLiteCommand(query, con);
+                //se le da que sera de tipo texto
                 cmd.CommandType = System.Data.CommandType.Text;
-
+                // crea un objeto del data reader para poder leer lo que retornara el command
                 using (SQLiteDataReader reader = cmd.ExecuteReader()) 
                 {
+                    // mientras el reader esta leyendo
                     while (reader.Read()) 
                     {
+                        // que añanada los datos de la tabla en la lista de clase registro
                         lista.Add(new Registro()
                         {
+                            // datos que leera y parseara a string
                             inventarioid = int.Parse(reader["inventarioid"].ToString()),
                             Nombre = reader["Nombre"].ToString(),
                             Apellidos = reader["Apellido"].ToString(),
@@ -130,7 +138,7 @@ namespace inventarioportable.Controlador
                     }
                 }
             }
-
+            //retorna la lista
             return lista;
         }
     }
