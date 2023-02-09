@@ -33,6 +33,9 @@
             this.btn_mod_el = new System.Windows.Forms.Button();
             this.btn_excel = new System.Windows.Forms.Button();
             this.btn_borrartodo = new System.Windows.Forms.Button();
+            this.cbox_directorio = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid_db)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,12 +104,46 @@
             this.btn_borrartodo.UseVisualStyleBackColor = false;
             this.btn_borrartodo.Click += new System.EventHandler(this.btn_borrartodo_Click);
             // 
+            // cbox_directorio
+            // 
+            this.cbox_directorio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbox_directorio.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cbox_directorio.FormattingEnabled = true;
+            this.cbox_directorio.Items.AddRange(new object[] {
+            "Escritorio",
+            "Carpeta del software"});
+            this.cbox_directorio.Location = new System.Drawing.Point(576, 25);
+            this.cbox_directorio.Name = "cbox_directorio";
+            this.cbox_directorio.Size = new System.Drawing.Size(121, 21);
+            this.cbox_directorio.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(573, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(170, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "¿Dónde desea guardar el informe?";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(576, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "(Escritorio por defecto)";
+            // 
             // verdatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(956, 630);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cbox_directorio);
             this.Controls.Add(this.btn_borrartodo);
             this.Controls.Add(this.btn_excel);
             this.Controls.Add(this.btn_mod_el);
@@ -128,5 +165,8 @@
         private System.Windows.Forms.Button btn_excel;
         private System.Windows.Forms.Button btn_borrartodo;
         public System.Windows.Forms.DataGridView grid_db;
+        private System.Windows.Forms.ComboBox cbox_directorio;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

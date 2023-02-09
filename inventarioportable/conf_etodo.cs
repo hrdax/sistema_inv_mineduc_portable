@@ -14,9 +14,11 @@ namespace inventarioportable
 {
     public partial class conf_etodo : Form
     {
-        public conf_etodo()
+        private IForm _form;
+        public conf_etodo(IForm form)
         {
             InitializeComponent();
+            _form = form;
         }
 
         private void btn_tno_Click(object sender, EventArgs e)
@@ -30,8 +32,9 @@ namespace inventarioportable
             //eliminara todo desde el metodo
             bool resp = controladorregistro.Instancia.eliminarTODO();
             MessageBox.Show("Registros eliminados");
-
             this.Close();
+            _form.listar();
+
         }
     }
 }

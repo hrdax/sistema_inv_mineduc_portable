@@ -14,14 +14,18 @@ namespace inventarioportable
 {
     public partial class modificar : Form
     {
-        public modificar()
+        private IForm _form;
+        public modificar(IForm form)
         {
             InitializeComponent();
+            _form = form;
+            
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
-            confirm_eliminar conf = new confirm_eliminar();
+            verdatos ver = new verdatos();
+            confirm_eliminar conf = new confirm_eliminar(ver);
             conf.lbl_id.Text = lblmod_id.Text;
             conf.lbl_nombre.Text = modificar_nombre.Text;
             conf.Show();
@@ -61,6 +65,7 @@ namespace inventarioportable
             MessageBox.Show("Registro modificado");
             //limpia los campos
             this.Close();
+            _form.listar();
             
             
         }

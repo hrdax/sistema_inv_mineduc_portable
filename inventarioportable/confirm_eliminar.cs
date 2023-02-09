@@ -14,9 +14,13 @@ namespace inventarioportable
 {
     public partial class confirm_eliminar : Form
     {
-        public confirm_eliminar()
+        //crea una variable privada que hara de conexion a la interface y la funcion listar
+        private IForm _form;
+        public confirm_eliminar(IForm form)
         {
             InitializeComponent();
+            //establece que la variable creada de la interface es igual al formulario que se entregara
+            _form = form;
         }
 
         private void btn_no_Click(object sender, EventArgs e)
@@ -36,7 +40,11 @@ namespace inventarioportable
             bool resp = controladorregistro.Instancia.eliminar(registro_objeto);
             MessageBox.Show("Registro eliminado");
             
+            
             this.Close();
+            //llama a la funcion de verdatos para que refresque la lista del dvg
+            _form.listar();
+
         }
     }
 }

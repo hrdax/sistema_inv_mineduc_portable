@@ -24,3 +24,4 @@ C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Rele
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Release\inventarioportable.csproj.CopyComplete
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Release\inventarioportable.exe
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Release\inventarioportable.pdb
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Release\inventarioportable.csproj.ResolveComReference.cache

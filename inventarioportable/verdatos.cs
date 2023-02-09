@@ -15,8 +15,9 @@ using System.Windows.Forms;
 
 namespace inventarioportable
 {
-    public partial class verdatos : Form
+    public partial class verdatos : Form, IForm
     {
+        
         public verdatos()
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace inventarioportable
         private void btn_mod_el_Click(object sender, EventArgs e)
         {
             //crea un objeto del form modificar
-            modificar mod = new modificar();
+            modificar mod = new modificar(this);
             foreach(DataGridViewRow row in this.grid_db.SelectedRows)
             {
                 mod.lblmod_id.Text = row.Cells[0].Value.ToString();
@@ -37,14 +38,17 @@ namespace inventarioportable
         //boton que borra todos los registros
         private void btn_borrartodo_Click(object sender, EventArgs e)
         {
-            conf_etodo conftodo = new conf_etodo();
+            //crea un objeto del form y pasa la interfaz con la funcion
+            conf_etodo conftodo = new conf_etodo(this);
             conftodo.Show();
+
         }
         //funcion listar que limpia el datagridview y le pasa la lista de la db
         public void listar()
         {
             grid_db.DataSource = null;
             grid_db.DataSource = controladorregistro.Instancia.list();
+            this.grid_db.Columns["inventarioid"].Visible = false;
         }
         //llama a la funcion listar cada vez que inicia carga verdatos
         private void verdatos_Load(object sender, EventArgs e)
@@ -61,7 +65,7 @@ namespace inventarioportable
                 //crea un objeto row desde las filas del dvg
                 DataGridViewRow row = this.grid_db.Rows[e.RowIndex];
                 //crea un objeto de form de modificar
-                modificar mod = new modificar();
+                modificar mod = new modificar(this);
                 //entrega los valores a los campos a modificar
                 mod.lblmod_id.Text = row.Cells["inventarioid"].Value.ToString();
                 mod.modificar_nombre.Text = row.Cells["Nombre"].Value.ToString();
@@ -89,6 +93,7 @@ namespace inventarioportable
                 
 
             }
+            
         }
 
         private void btn_excel_Click_1(object sender, EventArgs e)
@@ -140,8 +145,16 @@ namespace inventarioportable
             rangeheader.Interior.Color = Color.Gray;
 
 
-            //guarda el excel en la ruta
-            libroexcel.SaveAs(ruta + "\\Inventario.xlsx");
+            
+            if(cbox_directorio.Text == "Escritorio" || cbox_directorio.Text == "")
+            {
+                //guarda el excel en la ruta
+                libroexcel.SaveAs(ruta + "\\Inventario.xlsx");
+            }
+            else if(cbox_directorio.Text == "Carpeta del software")
+            {
+                libroexcel.SaveAs("\\Inventario.xlsx");
+            }
             //cierra el excel
             libroexcel.Close();
             // finaliza la application
