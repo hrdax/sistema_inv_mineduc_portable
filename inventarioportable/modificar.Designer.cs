@@ -491,6 +491,7 @@
             this.lblmod_id.Size = new System.Drawing.Size(78, 13);
             this.lblmod_id.TabIndex = 81;
             this.lblmod_id.Text = "No encontrado";
+            this.lblmod_id.Visible = false;
             // 
             // modificar
             // 
