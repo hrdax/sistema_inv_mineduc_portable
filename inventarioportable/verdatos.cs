@@ -12,6 +12,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using inventarioportable.Modelo;
 
 namespace inventarioportable
 {
@@ -27,12 +28,10 @@ namespace inventarioportable
         {
             //crea un objeto del form modificar
             modificar mod = new modificar(this);
-            foreach(DataGridViewRow row in this.grid_db.SelectedRows)
-            {
-                mod.lblmod_id.Text = row.Cells[0].Value.ToString();
-                
-                //mod.modificar_nombre.Text = row.Cells[1].Value.ToString();
-            }
+            string id = grid_db.SelectedRows[0].Cells[0].Value.ToString();
+            List<Registro> registro = controladorregistro.Instancia.listuno(id);
+            mod.lblmod_id.Text = registro[0].ToString();
+            mod.modificar_nombre.Text = registro[1].ToString();
             mod.Show();
         }
         //boton que borra todos los registros
