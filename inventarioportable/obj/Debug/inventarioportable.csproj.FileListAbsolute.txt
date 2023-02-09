@@ -24,3 +24,4 @@ C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debu
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\System.Data.SQLite.xml
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.CopyComplete
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.ResolveComReference.cache

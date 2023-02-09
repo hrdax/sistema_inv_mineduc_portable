@@ -1,4 +1,5 @@
 ﻿using inventarioportable.Controlador;
+using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -88,6 +89,22 @@ namespace inventarioportable
                 
 
             }
+        }
+
+        private void btn_excel_Click(object sender, EventArgs e)
+        {
+            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+
+            Workbook libroexcel = excel.Workbooks.Add(XlSheetType.xlWorksheet);
+            Worksheet hojaexcel = (Worksheet)excel.ActiveSheet;
+
+            excel.Visible = false;
+
+            hojaexcel.Cells[1, 1] = "Nombre";
+
+            libroexcel.SaveAs("\\Inventario.xlsx");
+            libroexcel.Close();
+            excel.Quit();
         }
     }
 }
