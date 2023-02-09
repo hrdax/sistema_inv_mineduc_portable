@@ -106,10 +106,15 @@ namespace inventarioportable
                 hojaexcel.Cells[1, column.Index + 1] = column.HeaderText;
                 foreach(DataGridViewRow fila in grid_db.Rows)
                 {
+                    
                     hojaexcel.Cells[fila.Index + 2, column.Index + 1] = fila.Cells[column.Index].Value;
                 }
             }
 
+            Microsoft.Office.Interop.Excel.Range range = hojaexcel.UsedRange;
+            range.Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+            range.Borders.Weight = Microsoft.Office.Interop.Excel.XlBorderWeight.xlThin;
+            range.Interior.Color = Color.Gray;
             libroexcel.SaveAs(ruta + "\\Inventario.xlsx");
             libroexcel.Close();
             excel.Quit();
