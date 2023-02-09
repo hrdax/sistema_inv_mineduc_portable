@@ -91,8 +91,9 @@ namespace inventarioportable
             }
         }
 
-        private void btn_excel_Click(object sender, EventArgs e)
+        private void btn_excel_Click_1(object sender, EventArgs e)
         {
+            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
 
             Workbook libroexcel = excel.Workbooks.Add(XlSheetType.xlWorksheet);
@@ -100,11 +101,19 @@ namespace inventarioportable
 
             excel.Visible = false;
 
-            hojaexcel.Cells[1, 1] = "Nombre";
+            foreach(DataGridViewColumn column in grid_db.Columns)
+            {
+                hojaexcel.Cells[1, column.Index + 1] = column.HeaderText;
+                foreach(DataGridViewRow fila in grid_db.Rows)
+                {
+                    hojaexcel.Cells[fila.Index + 2, column.Index + 1] = fila.Cells[column.Index].Value;
+                }
+            }
 
-            libroexcel.SaveAs("\\Inventario.xlsx");
+            libroexcel.SaveAs(ruta + "\\Inventario.xlsx");
             libroexcel.Close();
             excel.Quit();
+            MessageBox.Show("Se ha exportado a Excel");
         }
     }
 }

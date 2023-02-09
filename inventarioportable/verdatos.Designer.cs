@@ -85,6 +85,7 @@
             this.btn_excel.TabIndex = 3;
             this.btn_excel.Text = "Exportar a Excel";
             this.btn_excel.UseVisualStyleBackColor = false;
+            this.btn_excel.Click += new System.EventHandler(this.btn_excel_Click_1);
             // 
             // btn_borrartodo
             // 
