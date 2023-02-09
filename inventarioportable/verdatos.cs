@@ -93,31 +93,60 @@ namespace inventarioportable
 
         private void btn_excel_Click_1(object sender, EventArgs e)
         {
+            // guarda ruta hacia el escritorio
             string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            //crea una nueva app excel
             Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
-
+            
+            // crea un nuevo libro excel
             Workbook libroexcel = excel.Workbooks.Add(XlSheetType.xlWorksheet);
+            // crea una nueva hoja excel
             Worksheet hojaexcel = (Worksheet)excel.ActiveSheet;
+            
 
+            //no abre el excel al momento de crearlo
             excel.Visible = false;
 
+            // recorre todas las columnas en el datagridview
             foreach(DataGridViewColumn column in grid_db.Columns)
             {
+                // recorre las celdas titulares
                 hojaexcel.Cells[1, column.Index + 1] = column.HeaderText;
+                //recorre las filas
                 foreach(DataGridViewRow fila in grid_db.Rows)
                 {
-                    
+                   // recorre las celdas con los valores ingresados en el datagridview
                     hojaexcel.Cells[fila.Index + 2, column.Index + 1] = fila.Cells[column.Index].Value;
+                    
                 }
             }
 
+            
+
+            // crea rango para las celdas
             Microsoft.Office.Interop.Excel.Range range = hojaexcel.UsedRange;
+            // especifica que los bordes sean continuos
             range.Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+            //especifica que el grosor del borde sea delgado
             range.Borders.Weight = Microsoft.Office.Interop.Excel.XlBorderWeight.xlThin;
-            range.Interior.Color = Color.Gray;
+            //Pone el color de las celdas como gris
+            range.Interior.Color = Color.DarkGray;
+
+            // crea rango para las celdas titulas desde el A1 AL T1
+            Microsoft.Office.Interop.Excel.Range rangeheader = hojaexcel.get_Range("A1:T1");
+            //le da estilo negrita a las celdas titulares
+            rangeheader.Font.Bold = (int)Microsoft.Office.Core.MsoTriState.msoTrue;
+            //le da color gris a las celdas titualres
+            rangeheader.Interior.Color = Color.Gray;
+
+
+            //guarda el excel en la ruta
             libroexcel.SaveAs(ruta + "\\Inventario.xlsx");
+            //cierra el excel
             libroexcel.Close();
+            // finaliza la application
             excel.Quit();
+            //informa que se ha creado
             MessageBox.Show("Se ha exportado a Excel");
         }
     }
