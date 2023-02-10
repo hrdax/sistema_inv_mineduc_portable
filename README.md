@@ -6,7 +6,7 @@ Es simple de usar dejaré un instructivo para mejor entendimiento
 Como descargar el software
 1. Descargue desde Releases la versión más reciente
 2. Descomprima el archivo en donde quiera
-3. La carpeta que ha descomprimido tendrá el archivo Inventario Portable.exe el cuál es el ejecutable del programa
+3. La carpeta que ha descomprimido tendrá el archivo "Inventario Portable.exe" el cuál es el ejecutable del programa
 4. Abralo y estará listo, puede hacer un acceso directo hacia escritorio si prefiere.
 
 Para poder usar el programa en otro equipo y preservar los mismos registros simplemente debe copiar la carpeta del programa en un pendrive
