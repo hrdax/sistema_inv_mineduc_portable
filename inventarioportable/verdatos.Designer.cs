@@ -84,13 +84,14 @@
             // btn_excel
             // 
             this.btn_excel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_excel.BackColor = System.Drawing.Color.PaleGreen;
+            this.btn_excel.BackColor = System.Drawing.Color.Transparent;
             this.btn_excel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_excel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_excel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_excel.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_excel.Location = new System.Drawing.Point(359, 12);
+            this.btn_excel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_excel.Location = new System.Drawing.Point(332, 9);
             this.btn_excel.Name = "btn_excel";
-            this.btn_excel.Size = new System.Drawing.Size(138, 34);
+            this.btn_excel.Size = new System.Drawing.Size(165, 40);
             this.btn_excel.TabIndex = 3;
             this.btn_excel.Text = "Exportar a Excel";
             this.btn_excel.UseVisualStyleBackColor = false;
@@ -99,13 +100,14 @@
             // btn_borrartodo
             // 
             this.btn_borrartodo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_borrartodo.BackColor = System.Drawing.Color.Red;
+            this.btn_borrartodo.BackColor = System.Drawing.Color.Transparent;
             this.btn_borrartodo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_borrartodo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_borrartodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_borrartodo.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_borrartodo.Location = new System.Drawing.Point(806, 12);
+            this.btn_borrartodo.ForeColor = System.Drawing.Color.Red;
+            this.btn_borrartodo.Location = new System.Drawing.Point(779, 12);
             this.btn_borrartodo.Name = "btn_borrartodo";
-            this.btn_borrartodo.Size = new System.Drawing.Size(138, 34);
+            this.btn_borrartodo.Size = new System.Drawing.Size(165, 40);
             this.btn_borrartodo.TabIndex = 4;
             this.btn_borrartodo.Text = "Borrar TODO";
             this.btn_borrartodo.UseVisualStyleBackColor = false;

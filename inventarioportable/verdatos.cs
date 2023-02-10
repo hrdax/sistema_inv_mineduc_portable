@@ -14,16 +14,25 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using inventarioportable.Modelo;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace inventarioportable
 {
     public partial class verdatos : Form, IForm
     {
         
+        
         public verdatos()
         {
             InitializeComponent();
         }
+        //metodo para el hover
+        private void Hover()
+        {
+            hover.Hover(btn_excel, "Exportar a Excel");
+            hover.Hover(btn_borrartodo, "Borrar TODO");
+        }
+
         //abre form de modificar y le entrega los valores
         private void btn_mod_el_Click(object sender, EventArgs e)
         {
@@ -53,8 +62,11 @@ namespace inventarioportable
         //llama a la funcion listar cada vez que inicia carga verdatos
         private void verdatos_Load(object sender, EventArgs e)
         {
+            Hover();
             listar();
             this.grid_db.Columns["inventarioid"].Visible = false;
+            
+
         }
 
         private void grid_db_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
