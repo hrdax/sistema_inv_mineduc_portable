@@ -1,7 +1,4 @@
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Release\inventarioDB.db
-C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Release\inventarioportable.exe.config
-C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Release\inventarioportable.exe
-C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Release\inventarioportable.pdb
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Release\EntityFramework.dll
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Release\EntityFramework.SqlServer.dll
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Release\System.Data.SQLite.dll
@@ -22,6 +19,9 @@ C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Rele
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Release\inventarioportable.csproj.GenerateResource.cache
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Release\inventarioportable.csproj.CoreCompileInputs.cache
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Release\inventarioportable.csproj.CopyComplete
-C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Release\inventarioportable.exe
-C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Release\inventarioportable.pdb
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Release\inventarioportable.csproj.ResolveComReference.cache
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Release\Inventario Portable.exe.config
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Release\Inventario Portable.exe
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Release\Inventario Portable.pdb
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Release\Inventario Portable.exe
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Release\Inventario Portable.pdb

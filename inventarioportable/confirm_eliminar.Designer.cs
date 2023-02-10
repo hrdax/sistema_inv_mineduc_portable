@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(confirm_eliminar));
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_id = new System.Windows.Forms.Label();
             this.lbl_nombre = new System.Windows.Forms.Label();
@@ -93,9 +94,10 @@
             this.Controls.Add(this.lbl_nombre);
             this.Controls.Add(this.lbl_id);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "confirm_eliminar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "confirm_eliminar";
+            this.Text = "Confirmación";
             this.ResumeLayout(false);
             this.PerformLayout();
 

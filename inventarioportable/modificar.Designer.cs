@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(modificar));
             this.label20 = new System.Windows.Forms.Label();
             this.modificarcbox_departamento = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -542,6 +543,7 @@
             this.Controls.Add(this.modificar_RUT);
             this.Controls.Add(this.modificar_apellido);
             this.Controls.Add(this.modificar_nombre);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "modificar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar";

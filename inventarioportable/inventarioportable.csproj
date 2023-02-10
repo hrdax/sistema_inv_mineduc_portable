@@ -8,7 +8,7 @@
     <ProjectGuid>{361013F4-9702-4E91-BB21-AD0E0E45F22C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>inventarioportable</RootNamespace>
-    <AssemblyName>inventarioportable</AssemblyName>
+    <AssemblyName>Inventario Portable</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>seremieduca.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -108,6 +111,9 @@
     <Compile Include="verdatos.Designer.cs">
       <DependentUpon>verdatos.cs</DependentUpon>
     </Compile>
+    <Content Include="seremieduca.ico" />
+    <None Include="Resources\seremieduca.jpeg" />
+    <None Include="Resources\mineducs.PNG" />
     <EmbeddedResource Include="agregar.resx">
       <DependentUpon>agregar.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +137,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="verdatos.resx">
       <DependentUpon>verdatos.cs</DependentUpon>

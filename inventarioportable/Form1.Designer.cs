@@ -133,9 +133,10 @@
             this.ClientSize = new System.Drawing.Size(1244, 661);
             this.Controls.Add(this.panel_opcion);
             this.Controls.Add(this.panel_lateral);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Menu Principal";
             this.panel_lateral.ResumeLayout(false);
             this.panel_opcion.ResumeLayout(false);
             this.panel_opcion.PerformLayout();

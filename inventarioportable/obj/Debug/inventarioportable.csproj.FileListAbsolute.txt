@@ -1,14 +1,9 @@
-C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\inventarioportable.exe.config
-C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\inventarioportable.exe
-C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\inventarioportable.pdb
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.AssemblyReference.cache
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.SuggestedBindingRedirects.cache
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.Form1.resources
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.Properties.Resources.resources
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.GenerateResource.cache
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.CoreCompileInputs.cache
-C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.exe
-C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.pdb
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.verdatos.resources
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.agregar.resources
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.modificar.resources
@@ -25,3 +20,8 @@ C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debu
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\System.Data.SQLite.xml
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.CopyComplete
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.csproj.ResolveComReference.cache
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\Inventario Portable.exe.config
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\Inventario Portable.exe
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\Inventario Portable.pdb
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\Inventario Portable.exe
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\Inventario Portable.pdb
