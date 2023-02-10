@@ -41,6 +41,9 @@
             // 
             // grid_db
             // 
+            this.grid_db.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grid_db.BackgroundColor = System.Drawing.Color.Snow;
             this.grid_db.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_db.Location = new System.Drawing.Point(12, 65);
@@ -53,6 +56,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calisto MT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 567);
@@ -79,11 +83,12 @@
             // 
             // btn_excel
             // 
+            this.btn_excel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_excel.BackColor = System.Drawing.Color.PaleGreen;
             this.btn_excel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_excel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_excel.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_excel.Location = new System.Drawing.Point(366, 12);
+            this.btn_excel.Location = new System.Drawing.Point(359, 12);
             this.btn_excel.Name = "btn_excel";
             this.btn_excel.Size = new System.Drawing.Size(138, 34);
             this.btn_excel.TabIndex = 3;
@@ -93,6 +98,7 @@
             // 
             // btn_borrartodo
             // 
+            this.btn_borrartodo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_borrartodo.BackColor = System.Drawing.Color.Red;
             this.btn_borrartodo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_borrartodo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -107,21 +113,23 @@
             // 
             // cbox_directorio
             // 
+            this.cbox_directorio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbox_directorio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbox_directorio.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cbox_directorio.FormattingEnabled = true;
             this.cbox_directorio.Items.AddRange(new object[] {
             "Escritorio",
             "Carpeta del software"});
-            this.cbox_directorio.Location = new System.Drawing.Point(522, 25);
+            this.cbox_directorio.Location = new System.Drawing.Point(515, 25);
             this.cbox_directorio.Name = "cbox_directorio";
             this.cbox_directorio.Size = new System.Drawing.Size(121, 21);
             this.cbox_directorio.TabIndex = 5;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(519, 9);
+            this.label2.Location = new System.Drawing.Point(512, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(170, 13);
             this.label2.TabIndex = 6;
@@ -129,8 +137,9 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(522, 46);
+            this.label3.Location = new System.Drawing.Point(515, 46);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 13);
             this.label3.TabIndex = 7;

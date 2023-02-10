@@ -72,6 +72,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Snow;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,6 +84,7 @@
             // 
             // ingreso_nombres
             // 
+            this.ingreso_nombres.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ingreso_nombres.Location = new System.Drawing.Point(185, 90);
             this.ingreso_nombres.Multiline = true;
             this.ingreso_nombres.Name = "ingreso_nombres";
@@ -91,6 +93,7 @@
             // 
             // ingreso_apellidos
             // 
+            this.ingreso_apellidos.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ingreso_apellidos.Location = new System.Drawing.Point(185, 156);
             this.ingreso_apellidos.Multiline = true;
             this.ingreso_apellidos.Name = "ingreso_apellidos";
@@ -99,6 +102,7 @@
             // 
             // ingreso_RUT
             // 
+            this.ingreso_RUT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ingreso_RUT.Location = new System.Drawing.Point(185, 222);
             this.ingreso_RUT.Multiline = true;
             this.ingreso_RUT.Name = "ingreso_RUT";
@@ -107,6 +111,7 @@
             // 
             // ingreso_marca
             // 
+            this.ingreso_marca.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ingreso_marca.Location = new System.Drawing.Point(185, 290);
             this.ingreso_marca.Multiline = true;
             this.ingreso_marca.Name = "ingreso_marca";
@@ -115,6 +120,7 @@
             // 
             // ingreso_inventario
             // 
+            this.ingreso_inventario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ingreso_inventario.Location = new System.Drawing.Point(406, 90);
             this.ingreso_inventario.Multiline = true;
             this.ingreso_inventario.Name = "ingreso_inventario";
@@ -123,6 +129,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(185, 58);
             this.label2.Name = "label2";
@@ -132,6 +139,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(182, 131);
             this.label3.Name = "label3";
@@ -141,6 +149,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(182, 197);
             this.label4.Name = "label4";
@@ -150,6 +159,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(182, 264);
             this.label5.Name = "label5";
@@ -159,6 +169,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(403, 58);
             this.label6.Name = "label6";
@@ -168,6 +179,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(403, 197);
             this.label7.Name = "label7";
@@ -177,6 +189,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(403, 131);
             this.label8.Name = "label8";
@@ -186,6 +199,7 @@
             // 
             // ingreso_nombre_equipo
             // 
+            this.ingreso_nombre_equipo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ingreso_nombre_equipo.Location = new System.Drawing.Point(406, 222);
             this.ingreso_nombre_equipo.Multiline = true;
             this.ingreso_nombre_equipo.Name = "ingreso_nombre_equipo";
@@ -194,6 +208,7 @@
             // 
             // ingreso_usuario
             // 
+            this.ingreso_usuario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ingreso_usuario.Location = new System.Drawing.Point(406, 156);
             this.ingreso_usuario.Multiline = true;
             this.ingreso_usuario.Name = "ingreso_usuario";
@@ -202,6 +217,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(182, 331);
             this.label9.Name = "label9";
@@ -211,6 +227,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(403, 265);
             this.label10.Name = "label10";
@@ -220,6 +237,7 @@
             // 
             // ingreso_modelo
             // 
+            this.ingreso_modelo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ingreso_modelo.Location = new System.Drawing.Point(185, 357);
             this.ingreso_modelo.Multiline = true;
             this.ingreso_modelo.Name = "ingreso_modelo";
@@ -228,6 +246,7 @@
             // 
             // ingreso_MAC
             // 
+            this.ingreso_MAC.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ingreso_MAC.Location = new System.Drawing.Point(406, 290);
             this.ingreso_MAC.Multiline = true;
             this.ingreso_MAC.Name = "ingreso_MAC";
@@ -236,6 +255,7 @@
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(403, 332);
             this.label11.Name = "label11";
@@ -245,6 +265,7 @@
             // 
             // ingreso_RAM
             // 
+            this.ingreso_RAM.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ingreso_RAM.Location = new System.Drawing.Point(406, 357);
             this.ingreso_RAM.Multiline = true;
             this.ingreso_RAM.Name = "ingreso_RAM";
@@ -253,6 +274,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(182, 396);
             this.label12.Name = "label12";
@@ -262,6 +284,7 @@
             // 
             // ingreso_serie
             // 
+            this.ingreso_serie.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ingreso_serie.Location = new System.Drawing.Point(185, 422);
             this.ingreso_serie.Multiline = true;
             this.ingreso_serie.Name = "ingreso_serie";
@@ -270,6 +293,7 @@
             // 
             // cbox_vwindows
             // 
+            this.cbox_vwindows.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbox_vwindows.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbox_vwindows.FormattingEnabled = true;
             this.cbox_vwindows.Items.AddRange(new object[] {
@@ -284,6 +308,7 @@
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(635, 58);
             this.label13.Name = "label13";
@@ -293,6 +318,7 @@
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(635, 131);
             this.label14.Name = "label14";
@@ -302,6 +328,7 @@
             // 
             // cbox_voffice
             // 
+            this.cbox_voffice.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbox_voffice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbox_voffice.FormattingEnabled = true;
             this.cbox_voffice.Items.AddRange(new object[] {
@@ -315,6 +342,7 @@
             // 
             // label15
             // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(635, 197);
             this.label15.Name = "label15";
@@ -324,6 +352,7 @@
             // 
             // cbox_lojack
             // 
+            this.cbox_lojack.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbox_lojack.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbox_lojack.FormattingEnabled = true;
             this.cbox_lojack.Items.AddRange(new object[] {
@@ -338,6 +367,7 @@
             // 
             // label16
             // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(635, 265);
             this.label16.Name = "label16";
@@ -347,6 +377,7 @@
             // 
             // cbox_tipo_equipo
             // 
+            this.cbox_tipo_equipo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbox_tipo_equipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbox_tipo_equipo.FormattingEnabled = true;
             this.cbox_tipo_equipo.Items.AddRange(new object[] {
@@ -364,6 +395,7 @@
             // 
             // label17
             // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(635, 332);
             this.label17.Name = "label17";
@@ -373,6 +405,7 @@
             // 
             // cbox_unidad
             // 
+            this.cbox_unidad.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbox_unidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbox_unidad.FormattingEnabled = true;
             this.cbox_unidad.Items.AddRange(new object[] {
@@ -395,6 +428,7 @@
             // 
             // label18
             // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(182, 461);
             this.label18.Name = "label18";
@@ -404,6 +438,7 @@
             // 
             // ingreso_procesador
             // 
+            this.ingreso_procesador.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ingreso_procesador.Location = new System.Drawing.Point(185, 487);
             this.ingreso_procesador.Multiline = true;
             this.ingreso_procesador.Name = "ingreso_procesador";
@@ -412,6 +447,7 @@
             // 
             // label19
             // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(403, 397);
             this.label19.Name = "label19";
@@ -421,6 +457,7 @@
             // 
             // ingreso_espacio
             // 
+            this.ingreso_espacio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ingreso_espacio.Location = new System.Drawing.Point(406, 422);
             this.ingreso_espacio.Multiline = true;
             this.ingreso_espacio.Name = "ingreso_espacio";
@@ -429,6 +466,7 @@
             // 
             // label20
             // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(635, 397);
             this.label20.Name = "label20";
@@ -438,6 +476,7 @@
             // 
             // cbox_departamento
             // 
+            this.cbox_departamento.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbox_departamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbox_departamento.FormattingEnabled = true;
             this.cbox_departamento.Items.AddRange(new object[] {
@@ -453,6 +492,7 @@
             // 
             // btn_agregar
             // 
+            this.btn_agregar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_agregar.Location = new System.Drawing.Point(472, 564);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(96, 32);
