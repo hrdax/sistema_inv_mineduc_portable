@@ -42,21 +42,22 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(314, 68);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Está seguro de eliminar la siguiente columna con el siguiente N° y nombre: ";
+            this.label1.Text = "Está seguro de eliminar la siguiente columna con el siguiente nombre: ";
             // 
             // lbl_id
             // 
             this.lbl_id.AutoSize = true;
-            this.lbl_id.Location = new System.Drawing.Point(97, 80);
+            this.lbl_id.Location = new System.Drawing.Point(-3, -1);
             this.lbl_id.Name = "lbl_id";
             this.lbl_id.Size = new System.Drawing.Size(78, 13);
             this.lbl_id.TabIndex = 1;
             this.lbl_id.Text = "No encontrado";
+            this.lbl_id.Visible = false;
             // 
             // lbl_nombre
             // 
             this.lbl_nombre.AutoSize = true;
-            this.lbl_nombre.Location = new System.Drawing.Point(195, 80);
+            this.lbl_nombre.Location = new System.Drawing.Point(158, 80);
             this.lbl_nombre.Name = "lbl_nombre";
             this.lbl_nombre.Size = new System.Drawing.Size(78, 13);
             this.lbl_nombre.TabIndex = 2;
