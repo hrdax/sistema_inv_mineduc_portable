@@ -46,3 +46,6 @@ si no elige nada por defecto se guardará en el escritorio
 
 Luego al presionar el boton de "Exportar a Excel" le indicará que sus registros fueron exportados a un excel
 ![Ejemplo exportar registro excel apretado](https://user-images.githubusercontent.com/74321905/218113240-64df43e8-f141-486b-949a-94d0ce4d0e24.PNG)
+
+Ejemplo vista excel
+![Ejemplo Excel](https://user-images.githubusercontent.com/74321905/218114413-8f6fef6c-a994-43d8-9c27-68d27791058b.PNG)
