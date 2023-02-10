@@ -13,6 +13,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using inventarioportable.Modelo;
+using System.IO;
 
 namespace inventarioportable
 {
@@ -98,7 +99,10 @@ namespace inventarioportable
         private void btn_excel_Click_1(object sender, EventArgs e)
         {
             // guarda ruta hacia el escritorio
-            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            // guarda ruta actual
+            string ruta = Directory.GetCurrentDirectory();
+
             //crea una nueva app excel
             Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
             
@@ -115,12 +119,12 @@ namespace inventarioportable
             foreach(DataGridViewColumn column in grid_db.Columns)
             {
                 // recorre las celdas titulares
-                hojaexcel.Cells[1, column.Index + 1] = column.HeaderText;
+                hojaexcel.Cells[1, column.Index + 2] = column.HeaderText;
                 //recorre las filas
                 foreach(DataGridViewRow fila in grid_db.Rows)
                 {
                    // recorre las celdas con los valores ingresados en el datagridview
-                    hojaexcel.Cells[fila.Index + 2, column.Index + 1] = fila.Cells[column.Index].Value;
+                    hojaexcel.Cells[fila.Index + 2, column.Index + 2] = fila.Cells[column.Index].Value;
                     
                 }
             }
@@ -137,7 +141,7 @@ namespace inventarioportable
             range.Interior.Color = Color.DarkGray;
 
             // crea rango para las celdas titulas desde el A1 AL T1
-            Microsoft.Office.Interop.Excel.Range rangeheader = hojaexcel.get_Range("A1:T1");
+            Microsoft.Office.Interop.Excel.Range rangeheader = hojaexcel.get_Range("B1:U1");
             //le da estilo negrita a las celdas titulares
             rangeheader.Font.Bold = (int)Microsoft.Office.Core.MsoTriState.msoTrue;
             //le da color gris a las celdas titualres
@@ -148,11 +152,11 @@ namespace inventarioportable
             if(cbox_directorio.Text == "Escritorio" || cbox_directorio.Text == "")
             {
                 //guarda el excel en la ruta
-                libroexcel.SaveAs(ruta + "\\Inventario.xlsx");
+                libroexcel.SaveAs(desktop + "\\Inventario.xlsx");
             }
             else if(cbox_directorio.Text == "Carpeta del software")
             {
-                libroexcel.SaveAs("\\Inventario.xlsx");
+                libroexcel.SaveAs(ruta + "\\Inventario.xlsx");
             }
             //cierra el excel
             libroexcel.Close();
