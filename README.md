@@ -40,7 +40,7 @@ Para eliminar o limpiar todos los registros puede hacer click en el boton de "Bo
 
 Confirma que sí quiere eliminarlos y automaticamente se eliminarán todos los registros
 
-Para exportar los registros a un excel puede elegir en que ubicación quiere guardar el archivo Escritorio en la misma carpeta del programa
+Para exportar los registros a un excel puede elegir en qué ubicación quiere guardar el archivo, puede elegir en el Escritorio o en la misma carpeta del programa
 si no elige nada por defecto se guardará en el escritorio
 ![Ejemplo exportar registro excel lugar de guardado](https://user-images.githubusercontent.com/74321905/218113117-f23e24ec-ff27-4660-8b4d-5c8f00209814.PNG)
 
