@@ -30,12 +30,13 @@
         {
             this.grid_db = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_mod_el = new System.Windows.Forms.Button();
             this.btn_excel = new System.Windows.Forms.Button();
             this.btn_borrartodo = new System.Windows.Forms.Button();
             this.cbox_directorio = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txt_filtroN = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid_db)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,21 +67,6 @@
             this.label1.Text = "Para modificar o elminar un registro debe hacer doble click en el mismo  y se des" +
     "plegará una ventana con las opciones de modificar o eliminar.";
             // 
-            // btn_mod_el
-            // 
-            this.btn_mod_el.BackColor = System.Drawing.Color.Gainsboro;
-            this.btn_mod_el.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_mod_el.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_mod_el.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_mod_el.Location = new System.Drawing.Point(12, 12);
-            this.btn_mod_el.Name = "btn_mod_el";
-            this.btn_mod_el.Size = new System.Drawing.Size(151, 34);
-            this.btn_mod_el.TabIndex = 2;
-            this.btn_mod_el.Text = "Modificar/Eliminar";
-            this.btn_mod_el.UseVisualStyleBackColor = false;
-            this.btn_mod_el.Visible = false;
-            this.btn_mod_el.Click += new System.EventHandler(this.btn_mod_el_Click);
-            // 
             // btn_excel
             // 
             this.btn_excel.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -89,7 +75,7 @@
             this.btn_excel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_excel.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_excel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btn_excel.Location = new System.Drawing.Point(332, 9);
+            this.btn_excel.Location = new System.Drawing.Point(371, 13);
             this.btn_excel.Name = "btn_excel";
             this.btn_excel.Size = new System.Drawing.Size(165, 40);
             this.btn_excel.TabIndex = 3;
@@ -105,7 +91,7 @@
             this.btn_borrartodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_borrartodo.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_borrartodo.ForeColor = System.Drawing.Color.Red;
-            this.btn_borrartodo.Location = new System.Drawing.Point(779, 12);
+            this.btn_borrartodo.Location = new System.Drawing.Point(779, 13);
             this.btn_borrartodo.Name = "btn_borrartodo";
             this.btn_borrartodo.Size = new System.Drawing.Size(165, 40);
             this.btn_borrartodo.TabIndex = 4;
@@ -122,7 +108,7 @@
             this.cbox_directorio.Items.AddRange(new object[] {
             "Escritorio",
             "Carpeta del software"});
-            this.cbox_directorio.Location = new System.Drawing.Point(515, 25);
+            this.cbox_directorio.Location = new System.Drawing.Point(554, 23);
             this.cbox_directorio.Name = "cbox_directorio";
             this.cbox_directorio.Size = new System.Drawing.Size(121, 21);
             this.cbox_directorio.TabIndex = 5;
@@ -131,7 +117,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(512, 9);
+            this.label2.Location = new System.Drawing.Point(551, 7);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(170, 13);
             this.label2.TabIndex = 6;
@@ -141,11 +127,32 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(515, 46);
+            this.label3.Location = new System.Drawing.Point(554, 44);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "(Escritorio por defecto)";
+            // 
+            // txt_filtroN
+            // 
+            this.txt_filtroN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_filtroN.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_filtroN.Location = new System.Drawing.Point(12, 26);
+            this.txt_filtroN.Multiline = true;
+            this.txt_filtroN.Name = "txt_filtroN";
+            this.txt_filtroN.Size = new System.Drawing.Size(239, 27);
+            this.txt_filtroN.TabIndex = 8;
+            this.txt_filtroN.TextChanged += new System.EventHandler(this.txt_filtroN_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(11, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(133, 20);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Filtrar por Nombre";
             // 
             // verdatos
             // 
@@ -153,12 +160,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(956, 630);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txt_filtroN);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbox_directorio);
             this.Controls.Add(this.btn_borrartodo);
             this.Controls.Add(this.btn_excel);
-            this.Controls.Add(this.btn_mod_el);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grid_db);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -173,12 +181,13 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_mod_el;
         private System.Windows.Forms.Button btn_excel;
         private System.Windows.Forms.Button btn_borrartodo;
         public System.Windows.Forms.DataGridView grid_db;
         private System.Windows.Forms.ComboBox cbox_directorio;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_filtroN;
+        private System.Windows.Forms.Label label4;
     }
 }

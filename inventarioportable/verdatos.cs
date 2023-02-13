@@ -177,5 +177,39 @@ namespace inventarioportable
             //informa que se ha creado
             MessageBox.Show("Se ha exportado a Excel");
         }
+        //filtrado por nombre
+        private void txt_filtroN_TextChanged(object sender, EventArgs e)
+        {
+            //si el textbox esta vacio dejara en nulo la celda actual
+            if(txt_filtroN.Text != "")
+            {
+                grid_db.CurrentCell = null;
+                //for que recorrera las filas y las ocultara
+                foreach(DataGridViewRow row in grid_db.Rows)
+                {
+                    row.Visible = false;
+                }
+                //for que recorrera las filas
+                foreach (DataGridViewRow row in grid_db.Rows)
+                {
+                    //for que recorrera las celdas
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        //si el campo de nombre es igual a lo excrito en el textbox mostrara solo esos datos
+                        if ((row.Cells[1].Value.ToString().ToUpper()).IndexOf(txt_filtroN.Text.ToUpper()) == 0)
+                        {
+                            //mostrara los datos
+                            row.Visible = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                //si esta vacio muestra todos los datos
+                listar();
+            }
+        }
     }
 }
