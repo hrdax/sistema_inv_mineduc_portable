@@ -29,6 +29,7 @@ namespace inventarioportable
             conf.lbl_id.Text = lblmod_id.Text;
             conf.lbl_nombre.Text = modificar_nombre.Text;
             conf.Show();
+            this.Close();
             
            
 
