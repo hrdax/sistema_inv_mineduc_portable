@@ -544,6 +544,7 @@
             this.Controls.Add(this.modificar_apellido);
             this.Controls.Add(this.modificar_nombre);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "modificar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar";

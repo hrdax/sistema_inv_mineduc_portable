@@ -25,3 +25,4 @@ C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debu
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\bin\Debug\Inventario Portable.pdb
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\Inventario Portable.exe
 C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\Inventario Portable.pdb
+C:\Users\juanp.mella\source\repos\inventarioportable\inventarioportable\obj\Debug\inventarioportable.ayudagithub.resources

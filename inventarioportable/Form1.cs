@@ -45,5 +45,11 @@ namespace inventarioportable
         {
             this.abrirpanel(new agregar());
         }
+
+        private void btn_ayuda_Click(object sender, EventArgs e)
+        {
+            ayudagithub ayuda = new ayudagithub();
+            ayuda.Show();
+        }
     }
 }

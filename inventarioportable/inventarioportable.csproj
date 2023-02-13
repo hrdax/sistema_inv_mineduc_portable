@@ -75,6 +75,12 @@
     <Compile Include="agregar.Designer.cs">
       <DependentUpon>agregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="ayudagithub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayudagithub.Designer.cs">
+      <DependentUpon>ayudagithub.cs</DependentUpon>
+    </Compile>
     <Compile Include="confirm_eliminar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <None Include="Resources\mineducs.PNG" />
     <EmbeddedResource Include="agregar.resx">
       <DependentUpon>agregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ayudagithub.resx">
+      <DependentUpon>ayudagithub.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="confirm_eliminar.resx">
       <DependentUpon>confirm_eliminar.cs</DependentUpon>

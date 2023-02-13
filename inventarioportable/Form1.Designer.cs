@@ -36,6 +36,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel_opcion = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_ayuda = new System.Windows.Forms.Button();
             this.panel_lateral.SuspendLayout();
             this.panel_opcion.SuspendLayout();
             this.SuspendLayout();
@@ -43,6 +44,7 @@
             // panel_lateral
             // 
             this.panel_lateral.BackColor = System.Drawing.SystemColors.Control;
+            this.panel_lateral.Controls.Add(this.btn_ayuda);
             this.panel_lateral.Controls.Add(this.btn_agregar);
             this.panel_lateral.Controls.Add(this.btn_verdatos);
             this.panel_lateral.Controls.Add(this.panel2);
@@ -125,6 +127,20 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Sistema de Inventariado de Hardware";
             // 
+            // btn_ayuda
+            // 
+            this.btn_ayuda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_ayuda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ayuda.BackgroundImage")));
+            this.btn_ayuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_ayuda.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ayuda.Location = new System.Drawing.Point(236, 626);
+            this.btn_ayuda.Name = "btn_ayuda";
+            this.btn_ayuda.Size = new System.Drawing.Size(32, 32);
+            this.btn_ayuda.TabIndex = 4;
+            this.btn_ayuda.Text = "?";
+            this.btn_ayuda.UseVisualStyleBackColor = true;
+            this.btn_ayuda.Click += new System.EventHandler(this.btn_ayuda_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -153,6 +169,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel_opcion;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_ayuda;
     }
 }
 
