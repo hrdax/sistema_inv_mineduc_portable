@@ -25,12 +25,13 @@ namespace inventarioportable
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
             verdatos ver = new verdatos();
-            confirm_eliminar conf = new confirm_eliminar(ver);
+            confirm_eliminar conf = new confirm_eliminar(_form);
             conf.lbl_id.Text = lblmod_id.Text;
             conf.lbl_nombre.Text = modificar_nombre.Text;
             conf.Show();
-
             
+           
+
         }
 
         private void btn_modificar_Click(object sender, EventArgs e)
@@ -65,9 +66,10 @@ namespace inventarioportable
             MessageBox.Show("Registro modificado");
             //limpia los campos
             this.Close();
+            //llama a la funcion de verdatos para que refresque la lista del dvg
             _form.listar();
-            
-            
+
+
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)

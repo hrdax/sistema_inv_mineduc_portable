@@ -26,6 +26,7 @@ namespace inventarioportable
         private void btn_no_Click(object sender, EventArgs e)
         {
             this.Close();
+            
         }
 
         private void btn_si_Click(object sender, EventArgs e)
@@ -44,6 +45,7 @@ namespace inventarioportable
             this.Close();
             //llama a la funcion de verdatos para que refresque la lista del dvg
             _form.listar();
+
 
         }
     }
