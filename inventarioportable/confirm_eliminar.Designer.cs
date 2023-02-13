@@ -57,8 +57,11 @@
             // 
             // lbl_nombre
             // 
+            this.lbl_nombre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_nombre.AutoSize = true;
-            this.lbl_nombre.Location = new System.Drawing.Point(158, 80);
+            this.lbl_nombre.Location = new System.Drawing.Point(156, 80);
             this.lbl_nombre.Name = "lbl_nombre";
             this.lbl_nombre.Size = new System.Drawing.Size(78, 13);
             this.lbl_nombre.TabIndex = 2;
