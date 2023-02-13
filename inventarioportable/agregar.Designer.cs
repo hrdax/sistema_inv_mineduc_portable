@@ -493,7 +493,7 @@
             // btn_agregar
             // 
             this.btn_agregar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_agregar.Location = new System.Drawing.Point(472, 564);
+            this.btn_agregar.Location = new System.Drawing.Point(451, 560);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(96, 32);
             this.btn_agregar.TabIndex = 39;
