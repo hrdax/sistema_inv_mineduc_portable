@@ -177,177 +177,197 @@ namespace inventarioportable
             //informa que se ha creado
             MessageBox.Show("Se ha exportado a Excel");
         }
-        //filtrado por nombre
+        //filtrado
         private void txt_filtroN_TextChanged(object sender, EventArgs e)
         {
-            ////si el textbox esta vacio dejara en nulo la celda actual
-            //if(txt_filtroN.Text != "")
-            //{
-            //    grid_db.CurrentCell = null;
-            //    //for que recorrera las filas y las ocultara
-            //    foreach(DataGridViewRow row in grid_db.Rows)
-            //    {
-            //        row.Visible = false;
-            //    }
-            //    //for que recorrera las filas
-            //    foreach (DataGridViewRow row in grid_db.Rows)
-            //    {
-            //        //for que recorrera las celdas
-            //        foreach (DataGridViewCell cell in row.Cells)
-            //        {
-            //            //si el campo de nombre es igual a lo excrito en el textbox mostrara solo esos datos
-            //            if ((row.Cells[1].Value.ToString().ToUpper()).IndexOf(txt_filtroN.Text.ToUpper()) == 0)
-            //            {
-            //                //mostrara los datos
-            //                row.Visible = true;
-            //                break;
-            //            }
-            //        }
-            //    }
-            //}
-            //else
-            //{
-            //    //si esta vacio muestra todos los datos
-            //    listar();
-            //}
+            if(lbl_filtrado.Text == "")
+            {
+                //si el textbox esta vacio dejara en nulo la celda actual
+                if (txt_filtroN.Text != "")
+                {
+                    grid_db.CurrentCell = null;
+                    //for que recorrera las filas y las ocultara
+                    foreach (DataGridViewRow row in grid_db.Rows)
+                    {
+                        row.Visible = false;
+                    }
+                    //for que recorrera las filas
+                    foreach (DataGridViewRow row in grid_db.Rows)
+                    {
+                        //for que recorrera las celdas
+                        foreach (DataGridViewCell cell in row.Cells)
+                        {
+                            //si el campo de nombre es igual a lo excrito en el textbox mostrara solo esos datos
+                            if ((row.Cells[1].Value.ToString().ToUpper()).IndexOf(txt_filtroN.Text.ToUpper()) == 0)
+                            {
+                                //mostrara los datos
+                                row.Visible = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    //si esta vacio muestra todos los datos
+                    listar();
+                }
+                //revisa si el label tiene de texto nombre y busca por nombre
+            }else if (lbl_filtrado.Text == "Nombre")
+            {
+                //si el textbox esta vacio dejara en nulo la celda actual
+                if (txt_filtroN.Text != "")
+                {
+                    grid_db.CurrentCell = null;
+                    //for que recorrera las filas y las ocultara
+                    foreach (DataGridViewRow row in grid_db.Rows)
+                    {
+                        row.Visible = false;
+                    }
+                    //for que recorrera las filas
+                    foreach (DataGridViewRow row in grid_db.Rows)
+                    {
+                        //for que recorrera las celdas
+                        foreach (DataGridViewCell cell in row.Cells)
+                        {
+                            //si el campo de nombre es igual a lo excrito en el textbox mostrara solo esos datos
+                            if ((row.Cells[1].Value.ToString().ToUpper()).IndexOf(txt_filtroN.Text.ToUpper()) == 0)
+                            {
+                                //mostrara los datos
+                                row.Visible = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    //si esta vacio muestra todos los datos
+                    listar();
+                }
+            }
+            else if (lbl_filtrado.Text == "Rut")
+            {
+                //si el textbox esta vacio dejara en nulo la celda actual
+                if (txt_filtroN.Text != "")
+                {
+                    grid_db.CurrentCell = null;
+                    //for que recorrera las filas y las ocultara
+                    foreach (DataGridViewRow row in grid_db.Rows)
+                    {
+                        row.Visible = false;
+                    }
+                    //for que recorrera las filas
+                    foreach (DataGridViewRow row in grid_db.Rows)
+                    {
+                        //for que recorrera las celdas
+                        foreach (DataGridViewCell cell in row.Cells)
+                        {
+                            //si el campo de rut es igual a lo excrito en el textbox mostrara solo esos datos
+                            if ((row.Cells[3].Value.ToString().ToUpper()).IndexOf(txt_filtroN.Text.ToUpper()) == 0)
+                            {
+                                //mostrara los datos
+                                row.Visible = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    //si esta vacio muestra todos los datos
+                    listar();
+                }
+            }
+            else if (lbl_filtrado.Text == "Tipo de Equipo")
+            {
+                //si el textbox esta vacio dejara en nulo la celda actual
+                if (txt_filtroN.Text != "")
+                {
+                    grid_db.CurrentCell = null;
+                    //for que recorrera las filas y las ocultara
+                    foreach (DataGridViewRow row in grid_db.Rows)
+                    {
+                        row.Visible = false;
+                    }
+                    //for que recorrera las filas
+                    foreach (DataGridViewRow row in grid_db.Rows)
+                    {
+                        //for que recorrera las celdas
+                        foreach (DataGridViewCell cell in row.Cells)
+                        {
+                            //si el campo de Tipo de Equipo es igual a lo excrito en el textbox mostrara solo esos datos
+                            if ((row.Cells[6].Value.ToString().ToUpper()).IndexOf(txt_filtroN.Text.ToUpper()) == 0)
+                            {
+                                //mostrara los datos
+                                row.Visible = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    //si esta vacio muestra todos los datos
+                    listar();
+                }
+            }
+            else if (lbl_filtrado.Text == "Marca")
+            {
+                //si el textbox esta vacio dejara en nulo la celda actual
+                if (txt_filtroN.Text != "")
+                {
+                    grid_db.CurrentCell = null;
+                    //for que recorrera las filas y las ocultara
+                    foreach (DataGridViewRow row in grid_db.Rows)
+                    {
+                        row.Visible = false;
+                    }
+                    //for que recorrera las filas
+                    foreach (DataGridViewRow row in grid_db.Rows)
+                    {
+                        //for que recorrera las celdas
+                        foreach (DataGridViewCell cell in row.Cells)
+                        {
+                            //si el campo de marca es igual a lo excrito en el textbox mostrara solo esos datos
+                            if ((row.Cells[7].Value.ToString().ToUpper()).IndexOf(txt_filtroN.Text.ToUpper()) == 0)
+                            {
+                                //mostrara los datos
+                                row.Visible = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    //si esta vacio muestra todos los datos
+                    listar();
+                }
+            }
+
         }
 
         private void RB_Nombre_CheckedChanged(object sender, EventArgs e)
         {
-            //si el textbox esta vacio dejara en nulo la celda actual
-            if (txt_filtroN.Text != "")
-            {
-                grid_db.CurrentCell = null;
-                //for que recorrera las filas y las ocultara
-                foreach (DataGridViewRow row in grid_db.Rows)
-                {
-                    row.Visible = false;
-                }
-                //for que recorrera las filas
-                foreach (DataGridViewRow row in grid_db.Rows)
-                {
-                    //for que recorrera las celdas
-                    foreach (DataGridViewCell cell in row.Cells)
-                    {
-                        //si el campo de nombre es igual a lo excrito en el textbox mostrara solo esos datos
-                        if ((row.Cells[1].Value.ToString().ToUpper()).IndexOf(txt_filtroN.Text.ToUpper()) == 0)
-                        {
-                            //mostrara los datos
-                            row.Visible = true;
-                            break;
-                        }
-                    }
-                }
-            }
-            else
-            {
-                //si esta vacio muestra todos los datos
-                listar();
-            }
+            lbl_filtrado.Text = "Nombre";
         }
 
         
 
         private void RB_TipoEquipo(object sender, EventArgs e)
         {
-            //si el textbox esta vacio dejara en nulo la celda actual
-            if (txt_filtroN.Text != "")
-            {
-                grid_db.CurrentCell = null;
-                //for que recorrera las filas y las ocultara
-                foreach (DataGridViewRow row in grid_db.Rows)
-                {
-                    row.Visible = false;
-                }
-                //for que recorrera las filas
-                foreach (DataGridViewRow row in grid_db.Rows)
-                {
-                    //for que recorrera las celdas
-                    foreach (DataGridViewCell cell in row.Cells)
-                    {
-                        //si el campo de tipo de equipo es igual a lo excrito en el textbox mostrara solo esos datos
-                        if ((row.Cells[6].Value.ToString().ToUpper()).IndexOf(txt_filtroN.Text.ToUpper()) == 0)
-                        {
-                            //mostrara los datos
-                            row.Visible = true;
-                            break;
-                        }
-                    }
-                }
-            }
-            else
-            {
-                //si esta vacio muestra todos los datos
-                listar();
-            }
+            lbl_filtrado.Text = "Tipo de Equipo";
         }
 
         private void RB_Rut(object sender, EventArgs e)
         {
-            //si el textbox esta vacio dejara en nulo la celda actual
-            if (txt_filtroN.Text != "")
-            {
-                grid_db.CurrentCell = null;
-                //for que recorrera las filas y las ocultara
-                foreach (DataGridViewRow row in grid_db.Rows)
-                {
-                    row.Visible = false;
-                }
-                //for que recorrera las filas
-                foreach (DataGridViewRow row in grid_db.Rows)
-                {
-                    //for que recorrera las celdas
-                    foreach (DataGridViewCell cell in row.Cells)
-                    {
-                        //si el campo de rut es igual a lo excrito en el textbox mostrara solo esos datos
-                        if ((row.Cells[3].Value.ToString().ToUpper()).IndexOf(txt_filtroN.Text.ToUpper()) == 0)
-                        {
-                            //mostrara los datos
-                            row.Visible = true;
-                            break;
-                        }
-                    }
-                }
-            }
-            else
-            {
-                //si esta vacio muestra todos los datos
-                listar();
-            }
+            lbl_filtrado.Text = "Rut";
         }
 
         private void RB_Marca_CheckedChanged(object sender, EventArgs e)
         {
-            //si el textbox esta vacio dejara en nulo la celda actual
-            if (txt_filtroN.Text != "")
-            {
-                grid_db.CurrentCell = null;
-                //for que recorrera las filas y las ocultara
-                foreach (DataGridViewRow row in grid_db.Rows)
-                {
-                    row.Visible = false;
-                }
-                //for que recorrera las filas
-                foreach (DataGridViewRow row in grid_db.Rows)
-                {
-                    //for que recorrera las celdas
-                    foreach (DataGridViewCell cell in row.Cells)
-                    {
-                        //si el campo de marca es igual a lo excrito en el textbox mostrara solo esos datos
-                        if ((row.Cells[7].Value.ToString().ToUpper()).IndexOf(txt_filtroN.Text.ToUpper()) == 0)
-                        {
-                            //mostrara los datos
-                            row.Visible = true;
-                            break;
-                        }
-                    }
-                }
-            }
-            else
-            {
-                //si esta vacio muestra todos los datos
-                listar();
-            }
+            lbl_filtrado.Text = "Marca";
         }
 
     }

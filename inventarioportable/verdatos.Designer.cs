@@ -41,6 +41,7 @@
             this.RB_Rutb = new System.Windows.Forms.RadioButton();
             this.RB_Marca = new System.Windows.Forms.RadioButton();
             this.RB_Tipo_Equipo = new System.Windows.Forms.RadioButton();
+            this.lbl_filtrado = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid_db)).BeginInit();
             this.SuspendLayout();
             // 
@@ -206,12 +207,22 @@
             this.RB_Tipo_Equipo.UseVisualStyleBackColor = true;
             this.RB_Tipo_Equipo.CheckedChanged += new System.EventHandler(this.RB_TipoEquipo);
             // 
+            // lbl_filtrado
+            // 
+            this.lbl_filtrado.AutoSize = true;
+            this.lbl_filtrado.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_filtrado.Location = new System.Drawing.Point(75, 6);
+            this.lbl_filtrado.Name = "lbl_filtrado";
+            this.lbl_filtrado.Size = new System.Drawing.Size(0, 15);
+            this.lbl_filtrado.TabIndex = 14;
+            // 
             // verdatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(956, 630);
+            this.Controls.Add(this.lbl_filtrado);
             this.Controls.Add(this.RB_Marca);
             this.Controls.Add(this.RB_Tipo_Equipo);
             this.Controls.Add(this.RB_Rutb);
@@ -249,5 +260,6 @@
         private System.Windows.Forms.RadioButton RB_Rutb;
         private System.Windows.Forms.RadioButton RB_Marca;
         private System.Windows.Forms.RadioButton RB_Tipo_Equipo;
+        private System.Windows.Forms.Label lbl_filtrado;
     }
 }
