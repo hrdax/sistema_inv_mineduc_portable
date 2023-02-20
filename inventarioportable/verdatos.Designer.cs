@@ -37,6 +37,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_filtroN = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.RB_Nombre = new System.Windows.Forms.RadioButton();
+            this.RB_Rutb = new System.Windows.Forms.RadioButton();
+            this.RB_Marca = new System.Windows.Forms.RadioButton();
+            this.RB_Tipo_Equipo = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.grid_db)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,22 +141,70 @@
             // 
             this.txt_filtroN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_filtroN.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_filtroN.Location = new System.Drawing.Point(12, 26);
+            this.txt_filtroN.Location = new System.Drawing.Point(209, 23);
             this.txt_filtroN.Multiline = true;
             this.txt_filtroN.Name = "txt_filtroN";
-            this.txt_filtroN.Size = new System.Drawing.Size(239, 27);
+            this.txt_filtroN.Size = new System.Drawing.Size(144, 27);
             this.txt_filtroN.TabIndex = 8;
             this.txt_filtroN.TextChanged += new System.EventHandler(this.txt_filtroN_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(11, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 20);
+            this.label4.Size = new System.Drawing.Size(66, 17);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Filtrar por Nombre";
+            this.label4.Text = "Filtrar por";
+            // 
+            // RB_Nombre
+            // 
+            this.RB_Nombre.AutoSize = true;
+            this.RB_Nombre.Location = new System.Drawing.Point(15, 23);
+            this.RB_Nombre.Name = "RB_Nombre";
+            this.RB_Nombre.Size = new System.Drawing.Size(62, 17);
+            this.RB_Nombre.TabIndex = 10;
+            this.RB_Nombre.TabStop = true;
+            this.RB_Nombre.Text = "Nombre";
+            this.RB_Nombre.UseVisualStyleBackColor = true;
+            this.RB_Nombre.CheckedChanged += new System.EventHandler(this.RB_Nombre_CheckedChanged);
+            // 
+            // RB_Rutb
+            // 
+            this.RB_Rutb.AutoSize = true;
+            this.RB_Rutb.Location = new System.Drawing.Point(15, 43);
+            this.RB_Rutb.Name = "RB_Rutb";
+            this.RB_Rutb.Size = new System.Drawing.Size(42, 17);
+            this.RB_Rutb.TabIndex = 11;
+            this.RB_Rutb.TabStop = true;
+            this.RB_Rutb.Text = "Rut";
+            this.RB_Rutb.UseVisualStyleBackColor = true;
+            this.RB_Rutb.CheckedChanged += new System.EventHandler(this.RB_Rut);
+            // 
+            // RB_Marca
+            // 
+            this.RB_Marca.AutoSize = true;
+            this.RB_Marca.Location = new System.Drawing.Point(83, 43);
+            this.RB_Marca.Name = "RB_Marca";
+            this.RB_Marca.Size = new System.Drawing.Size(55, 17);
+            this.RB_Marca.TabIndex = 13;
+            this.RB_Marca.TabStop = true;
+            this.RB_Marca.Text = "Marca";
+            this.RB_Marca.UseVisualStyleBackColor = true;
+            this.RB_Marca.CheckedChanged += new System.EventHandler(this.RB_Marca_CheckedChanged);
+            // 
+            // RB_Tipo_Equipo
+            // 
+            this.RB_Tipo_Equipo.AutoSize = true;
+            this.RB_Tipo_Equipo.Location = new System.Drawing.Point(83, 23);
+            this.RB_Tipo_Equipo.Name = "RB_Tipo_Equipo";
+            this.RB_Tipo_Equipo.Size = new System.Drawing.Size(97, 17);
+            this.RB_Tipo_Equipo.TabIndex = 12;
+            this.RB_Tipo_Equipo.TabStop = true;
+            this.RB_Tipo_Equipo.Text = "Tipo de Equipo";
+            this.RB_Tipo_Equipo.UseVisualStyleBackColor = true;
+            this.RB_Tipo_Equipo.CheckedChanged += new System.EventHandler(this.RB_TipoEquipo);
             // 
             // verdatos
             // 
@@ -160,6 +212,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(956, 630);
+            this.Controls.Add(this.RB_Marca);
+            this.Controls.Add(this.RB_Tipo_Equipo);
+            this.Controls.Add(this.RB_Rutb);
+            this.Controls.Add(this.RB_Nombre);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_filtroN);
             this.Controls.Add(this.label3);
@@ -189,5 +245,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_filtroN;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RadioButton RB_Nombre;
+        private System.Windows.Forms.RadioButton RB_Rutb;
+        private System.Windows.Forms.RadioButton RB_Marca;
+        private System.Windows.Forms.RadioButton RB_Tipo_Equipo;
     }
 }
