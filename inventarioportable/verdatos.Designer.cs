@@ -42,6 +42,7 @@
             this.RB_Marca = new System.Windows.Forms.RadioButton();
             this.RB_Tipo_Equipo = new System.Windows.Forms.RadioButton();
             this.lbl_filtrado = new System.Windows.Forms.Label();
+            this.cboxf_TE = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.grid_db)).BeginInit();
             this.SuspendLayout();
             // 
@@ -211,10 +212,29 @@
             // 
             this.lbl_filtrado.AutoSize = true;
             this.lbl_filtrado.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_filtrado.Location = new System.Drawing.Point(75, 6);
+            this.lbl_filtrado.Location = new System.Drawing.Point(72, 5);
             this.lbl_filtrado.Name = "lbl_filtrado";
             this.lbl_filtrado.Size = new System.Drawing.Size(0, 15);
             this.lbl_filtrado.TabIndex = 14;
+            // 
+            // cboxf_TE
+            // 
+            this.cboxf_TE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxf_TE.FormattingEnabled = true;
+            this.cboxf_TE.Items.AddRange(new object[] {
+            "",
+            "Notebook",
+            "Escritorio",
+            "Data-Show",
+            "Impresora",
+            "Escáner",
+            "Data/Proyector"});
+            this.cboxf_TE.Location = new System.Drawing.Point(219, 26);
+            this.cboxf_TE.Name = "cboxf_TE";
+            this.cboxf_TE.Size = new System.Drawing.Size(121, 21);
+            this.cboxf_TE.TabIndex = 15;
+            this.cboxf_TE.Visible = false;
+            this.cboxf_TE.TextChanged += new System.EventHandler(this.cboxf_TE_TextChanged);
             // 
             // verdatos
             // 
@@ -222,6 +242,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(956, 630);
+            this.Controls.Add(this.cboxf_TE);
             this.Controls.Add(this.lbl_filtrado);
             this.Controls.Add(this.RB_Marca);
             this.Controls.Add(this.RB_Tipo_Equipo);
@@ -261,5 +282,6 @@
         private System.Windows.Forms.RadioButton RB_Marca;
         private System.Windows.Forms.RadioButton RB_Tipo_Equipo;
         private System.Windows.Forms.Label lbl_filtrado;
+        private System.Windows.Forms.ComboBox cboxf_TE;
     }
 }

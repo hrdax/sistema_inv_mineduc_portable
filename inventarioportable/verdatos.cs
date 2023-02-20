@@ -279,39 +279,6 @@ namespace inventarioportable
                     listar();
                 }
             }
-            else if (lbl_filtrado.Text == "Tipo de Equipo")
-            {
-                //si el textbox esta vacio dejara en nulo la celda actual
-                if (txt_filtroN.Text != "")
-                {
-                    grid_db.CurrentCell = null;
-                    //for que recorrera las filas y las ocultara
-                    foreach (DataGridViewRow row in grid_db.Rows)
-                    {
-                        row.Visible = false;
-                    }
-                    //for que recorrera las filas
-                    foreach (DataGridViewRow row in grid_db.Rows)
-                    {
-                        //for que recorrera las celdas
-                        foreach (DataGridViewCell cell in row.Cells)
-                        {
-                            //si el campo de Tipo de Equipo es igual a lo excrito en el textbox mostrara solo esos datos
-                            if ((row.Cells[6].Value.ToString().ToUpper()).IndexOf(txt_filtroN.Text.ToUpper()) == 0)
-                            {
-                                //mostrara los datos
-                                row.Visible = true;
-                                break;
-                            }
-                        }
-                    }
-                }
-                else
-                {
-                    //si esta vacio muestra todos los datos
-                    listar();
-                }
-            }
             else if (lbl_filtrado.Text == "Marca")
             {
                 //si el textbox esta vacio dejara en nulo la celda actual
@@ -347,28 +314,72 @@ namespace inventarioportable
             }
 
         }
-
+        //al apretar el radio button de nombre da el valor de Nombre al label y este lo filtra con la funcion de txt changed del input 
         private void RB_Nombre_CheckedChanged(object sender, EventArgs e)
         {
             lbl_filtrado.Text = "Nombre";
+            cboxf_TE.Visible = false;
+            txt_filtroN.Visible = true;
         }
 
         
-
+        //esconde el textbox para que el combobox aparezca y se pueda seleccionar
         private void RB_TipoEquipo(object sender, EventArgs e)
         {
             lbl_filtrado.Text = "Tipo de Equipo";
+            cboxf_TE.Visible = true;
+            txt_filtroN.Visible = false;
         }
 
         private void RB_Rut(object sender, EventArgs e)
         {
             lbl_filtrado.Text = "Rut";
+            cboxf_TE.Visible = false;
+            txt_filtroN.Visible = true;
         }
 
         private void RB_Marca_CheckedChanged(object sender, EventArgs e)
         {
             lbl_filtrado.Text = "Marca";
+            cboxf_TE.Visible = false;
+            txt_filtroN.Visible = true;
         }
-
+        // filtrador del combobox de tipo de equipo
+        private void cboxf_TE_TextChanged(object sender, EventArgs e)
+        {
+            if (lbl_filtrado.Text == "Tipo de Equipo")
+            {
+                //si el textbox esta vacio dejara en nulo la celda actual
+                if (cboxf_TE.Text != "")
+                {
+                    grid_db.CurrentCell = null;
+                    //for que recorrera las filas y las ocultara
+                    foreach (DataGridViewRow row in grid_db.Rows)
+                    {
+                        row.Visible = false;
+                    }
+                    //for que recorrera las filas
+                    foreach (DataGridViewRow row in grid_db.Rows)
+                    {
+                        //for que recorrera las celdas
+                        foreach (DataGridViewCell cell in row.Cells)
+                        {
+                            //si el campo de Tipo de Equipo es igual a lo excrito en el textbox mostrara solo esos datos
+                            if ((row.Cells[6].Value.ToString().ToUpper()).IndexOf(cboxf_TE.Text.ToUpper()) == 0)
+                            {
+                                //mostrara los datos
+                                row.Visible = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    //si esta vacio muestra todos los datos
+                    listar();
+                }
+            }
+        }
     }
 }
