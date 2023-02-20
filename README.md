@@ -1,5 +1,5 @@
 # sistema_inv_mineduc_portable
-Sistema de inventario en C# con SQLite, interfaz gráfica y creación de informes en Excel. Realizado en base a lo solicitado por el Mineduc.
+Sistema de inventario en C# con SQLite, interfaz gráfica y creación de informes en Excel. Realizado en base a lo solicitado por supervisor.
 
 Es simple de usar dejaré un instructivo para mejor entendimiento
 
@@ -14,8 +14,9 @@ o en el dispositivo en el cual quiera usarlo.
 
 Instructivo básico de como usar el programa
 
---Imágen principal actualizada de Versión 1.2
-![image](https://user-images.githubusercontent.com/74321905/218464736-4b5ec03d-755b-4c1b-9d83-c1746ba95e92.png)
+--Imágen principal actualizada de Versión 1.4
+![image](https://user-images.githubusercontent.com/74321905/220172108-8356d4f5-a5c1-4cb4-a866-b196ac595f8a.png)
+
 Puede hacer click en Agregar para ingresar un registro
 
 ![Ejemplo ingreso funcional](https://user-images.githubusercontent.com/74321905/218111179-d6eae035-84b7-4f94-a996-f2cfacf0ad3e.PNG)
