@@ -14,8 +14,8 @@ o en el dispositivo en el cual quiera usarlo.
 
 Instructivo básico de como usar el programa
 
---Imágen principal actualizada de Versión 1.3
-![image](https://user-images.githubusercontent.com/74321905/218492591-f06767ac-61a9-4060-a6de-77316745ad98.png)
+--Imágen principal actualizada de Versión 1.4
+![image](https://user-images.githubusercontent.com/74321905/220172108-8356d4f5-a5c1-4cb4-a866-b196ac595f8a.png)
 
 Puede hacer click en Agregar para ingresar un registro
 
