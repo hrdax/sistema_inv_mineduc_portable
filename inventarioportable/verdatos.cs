@@ -117,31 +117,68 @@ namespace inventarioportable
 
             //crea una nueva app excel
             Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
-            
+
             // crea un nuevo libro excel
             Workbook libroexcel = excel.Workbooks.Add(XlSheetType.xlWorksheet);
             // crea una nueva hoja excel
             Worksheet hojaexcel = (Worksheet)excel.ActiveSheet;
-            
+
 
             //no abre el excel al momento de crearlo
             excel.Visible = false;
 
-            // recorre todas las columnas en el datagridview
-            foreach(DataGridViewColumn column in grid_db.Columns)
-            {
-                // recorre las celdas titulares
-                hojaexcel.Cells[1, column.Index + 2] = column.HeaderText;
-                //recorre las filas
-                foreach(DataGridViewRow fila in grid_db.Rows)
-                {
-                   // recorre las celdas con los valores ingresados en el datagridview
-                    hojaexcel.Cells[fila.Index + 2, column.Index + 2] = fila.Cells[column.Index].Value;
-                    
-                }
-            }
 
-            
+            // Le da el valor a los titulos
+            hojaexcel.Cells[1, 2] = "Nombre";
+            hojaexcel.Cells[1, 3] = "Apellidos";
+            hojaexcel.Cells[1, 4] = "Rut";
+            hojaexcel.Cells[1, 5] = "Departamento";
+            hojaexcel.Cells[1, 6] = "Unidad";
+            hojaexcel.Cells[1, 7] = "Tipo de Equipo";
+            hojaexcel.Cells[1, 8] = "Marca";
+            hojaexcel.Cells[1, 9] = "Modelo";
+            hojaexcel.Cells[1, 10] = "Serie";
+            hojaexcel.Cells[1, 11] = "Inventario";
+            hojaexcel.Cells[1, 12] = "Usuario";
+            hojaexcel.Cells[1, 13] = "Nombre de Equipo";
+            hojaexcel.Cells[1, 14] = "MAC";
+            hojaexcel.Cells[1, 15] = "RAM";
+            hojaexcel.Cells[1, 16] = "Espacio Disco";
+            hojaexcel.Cells[1, 17] = "Procesador";
+            hojaexcel.Cells[1, 18] = "Version Windows";
+            hojaexcel.Cells[1, 19] = "Version Office";
+            hojaexcel.Cells[1, 20] = "Lojack";
+
+            // variable para columnas
+            int col = -1;
+            // variable para filas
+            int fil = -1;
+            // variable para posicion en celda excel
+            int y = -1;
+            // variable para columna excel
+            int z = -1;
+
+            //recorre las filas
+            foreach (DataGridViewRow fila in grid_db.Rows)
+            {
+                fil++;
+                z++;
+
+                for (int x = 0; x < 19; x++)
+                {
+
+                    col++;
+                    // recorre las celdas con los valores ingresados en el datagridview
+                    //hojaexcel.Cells[fila.Index + 2, column.Index + 2] = fila.Cells[column.Index].Value;
+                    hojaexcel.Cells[z + 2, y + 3] = grid_db.Rows[fil].Cells[col + 1].Value.ToString();
+                    
+                    y++;
+
+
+                }
+                col = -1;
+                y = -1;
+            }
 
             // crea rango para las celdas
             Microsoft.Office.Interop.Excel.Range range = hojaexcel.UsedRange;
@@ -152,8 +189,8 @@ namespace inventarioportable
             //Pone el color de las celdas como gris
             range.Interior.Color = Color.DarkGray;
 
-            // crea rango para las celdas titulas desde el A1 AL T1
-            Microsoft.Office.Interop.Excel.Range rangeheader = hojaexcel.get_Range("B1:U1");
+            // crea rango para las celdas titulas desde el B1 AL U1
+            Microsoft.Office.Interop.Excel.Range rangeheader = hojaexcel.get_Range("B1:T1");
             //le da estilo negrita a las celdas titulares
             rangeheader.Font.Bold = (int)Microsoft.Office.Core.MsoTriState.msoTrue;
             //le da color gris a las celdas titualres
