@@ -228,7 +228,7 @@
             this.modificarcbox_voffice.Items.AddRange(new object[] {
             "",
             "Office 2016",
-            "Officec 365"});
+            "Office 365"});
             this.modificarcbox_voffice.Location = new System.Drawing.Point(618, 163);
             this.modificarcbox_voffice.Name = "modificarcbox_voffice";
             this.modificarcbox_voffice.Size = new System.Drawing.Size(121, 21);
