@@ -334,7 +334,7 @@
             this.cbox_voffice.Items.AddRange(new object[] {
             "",
             "Office 2016",
-            "Officec 365"});
+            "Office 365"});
             this.cbox_voffice.Location = new System.Drawing.Point(638, 156);
             this.cbox_voffice.Name = "cbox_voffice";
             this.cbox_voffice.Size = new System.Drawing.Size(121, 21);
