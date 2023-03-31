@@ -4,7 +4,8 @@ Sistema de inventario en C# con SQLite, interfaz gráfica y creación de informe
 Manual de usuario formato PDF incluido en la descarga
 
 Como descargar el software
-1. Vaya a "Releases" (lado derecho de la página) y seleccione la versión más reciente
+1. Vaya a "Releases" (lado derecho de la página) y seleccione la versión más reciente o puede hacer clic en este enlace https://github.com/hrdax/sistema_inv_mineduc_portable/releases/tag/inv_mineduc_v1.4
+
 2. Descomprima el archivo en donde quiera, tendrá un manual de usuario y el programa
 
 <b>Instructivo básico de como usar el programa</b>
