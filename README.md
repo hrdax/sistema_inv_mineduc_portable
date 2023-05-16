@@ -14,3 +14,4 @@ Como descargar el software
 
 Vista ilustrativa del menú de bienvenida
 ![image](https://user-images.githubusercontent.com/74321905/229160269-2711b8e8-1282-41b0-8e71-bccdb659b90b.png)
+![image](https://github.com/hrdax/sistema_inv_mineduc_portable/assets/74321905/0cd54d88-dd00-449d-94fc-b80eafed01bc)
